@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://use.fontawesome.com/c2af8c5fe9.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap-swipe-carousel.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- Content -->
+  <div class="mainContainer">
+    <nav id="navigation" class="navbar-fixed-top-black">
+      <ul class="navigation-wide">
+        <a href="#hello">
+          <li>HOME</li>
+        </a>
+        <a>
+          <li>SERVICES</li>
+        </a>
+        <a>
+          <li>OUR WORK</li>
+        </a>
+        <a>
+          <li>CONTACT</li>
+        </a>
+      </ul>
+      <a class="navigation-narrow">&#9776;</a>
+      <div class="mobileNavOverlay">
+        <ul class="mobileNavOverlay-content">
+          <a><li>HOME</li></a>
+          <a><li>SERVICES</li></a>
+          <a><li>OUR WORK</li></a>
+          <a><li>CONTACT</li></a>
+        </ul>
+      </div>
+
+    </nav>
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide my-carousel" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="https://picsum.photos/1920/1080/?random" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://picsum.photos/1921/1080/?random" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="https://picsum.photos/1922/1080/?random" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <div class="divBtnContact">
+        <button id="btnContact">LET'S GET TALKING</button>
+      </div>
+    </div>
+
+    <!-- {this.state.isMobileNavVisible && <MobileNav close={this.hideMobileNav} />} -->
+
+    <!-- Hello -->
+    <div id="hello" class="section">
+      <h3>Hello!</h3>
+
+      We're a small team of passionate musicians/filmmakers in Mumbai that have shot over 600 music videos for artists
+      big and small all over the world to help them gain more fans, and book more shows. Take a look at our music video
+      productions from 2018 below!
+    </div>
+
+    <!-- Service -->
+    <div id="services" class="servicesSection">
+      <Link to="/music">
+      <div class="service"><img src="images/service-1.png"></img><span>VIDEO PRODUCTION</span></div>
+      </Link>
+      <Link to="/music#music">
+      <div class="service"><img src="images/service-2.png"></img><span>MUSIC PRODUCTION</span></div>
+      </Link>
+      <Link to="/music">
+      <div class="service"><img src="images/service-3.png"></img><span>EVENT COVERAGE</span></div>
+      </Link>
+      <Link to="/music">
+      <div class="service"><img src="images/service-4.png"></img><span>TECH COMMUNICATION</span></div>
+      </Link>
+    </div>
+
+
+    <!-- Featured -->
+    <div class="featuredSection">
+      <!-- <div class="featuredStrip">
+        <span><img src="images/featured-1.jpg" /></span>
+        <span><img src="images/featured-2.jpg" /></span>
+        <span><img src="images/featured-3.jpg" /></span>
+        <span><img src="images/featured-4.jpg" /></span>
+      </div>
+      <div class="featuredStrip">
+        <span><img src="images/featured-3.jpg" /></span>
+        <span><img src="images/featured-4.jpg" /></span>
+        <span><img src="images/featured-1.jpg" /></span>
+        <span><img src="images/featured-2.jpg" /></span>
+      </div>
+      <div class="featuredStrip">
+        <span><img src="images/featured-1.jpg" /></span>
+        <span><img src="images/featured-2.jpg" /></span>
+        <span><img src="images/featured-3.jpg" /></span>
+        <span><img src="images/featured-4.jpg" /></span>
+      </div>
+      <div class="featuredStrip">
+        <span><img src="images/featured-3.jpg" /></span>
+        <span><img src="images/featured-4.jpg" /></span>
+        <span><img src="images/featured-1.jpg" /></span>
+        <span><img src="images/featured-2.jpg" /></span>
+      </div> -->
+      <!-- {this.state.isVideoVisible && <VideoPopup close={this.hideVideo} />} -->
+    </div>
+
+    <!-- Map -->
+    <div id="worldMap">
+      <img src="images/map.png" />
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="social-media-icons">
+        <ul class="list-inline col-xs-12">
+          <a href="#"><i class="fa fa-google-plus-square fa-5x"></i></a>
+          <a href="#"><i class="fa fa-twitter-square fa-5x"></i></a>
+          <a href="#"><i class="fa fa-youtube-square fa-5x"></i></a>
+          <a href="#"><i class="fa fa-rss-square fa-5x"></i></a>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+<div class="divVideo">
+  <iframe title="video" id="video-1" width="560" height="315" src="abc" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"
+    seamless=""></iframe>
+  <span href="#" id="videoClose" onClick={props.close}>X</span>
+</div>
+
+</html>
