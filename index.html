@@ -28,6 +28,11 @@
   <!-- Content -->
   <div class="mainContainer">
     <nav id="navigation" class="navbar-fixed-top-black">
+      <div class="logo">
+        THE <br />
+        WISE <br />
+        BLEND
+      </div>
       <ul class="navigation-wide">
         <a href="#hello">
           <li>HOME</li>
@@ -38,17 +43,25 @@
         <a>
           <li>OUR WORK</li>
         </a>
-        <a>
+        <a href="#contactSection">
           <li>CONTACT</li>
         </a>
       </ul>
       <a class="navigation-narrow">&#9776;</a>
       <div class="mobileNavOverlay">
         <ul class="mobileNavOverlay-content">
-          <a><li>HOME</li></a>
-          <a><li>SERVICES</li></a>
-          <a><li>OUR WORK</li></a>
-          <a><li>CONTACT</li></a>
+          <a>
+            <li>HOME</li>
+          </a>
+          <a>
+            <li>SERVICES</li>
+          </a>
+          <a>
+            <li>OUR WORK</li>
+          </a>
+          <a href="#contactSection">
+            <li>CONTACT</li>
+          </a>
         </ul>
       </div>
 
@@ -80,7 +93,7 @@
         <span class="sr-only">Next</span>
       </a>
       <div class="divBtnContact">
-        <button id="btnContact">LET'S GET TALKING</button>
+        <a href="#contactSection"><button class="btnContact">LET'S GET TALKING</button></a>
       </div>
     </div>
 
@@ -145,6 +158,53 @@
     <div id="worldMap">
       <img src="images/map.png" />
     </div>
+
+    <!-- Contact -->
+    <div id="contactSection" class="section">
+      <form
+        action="https://gmail.us20.list-manage.com/subscribe/post-json?u=e23d6c4c939fe3d0277691daa&amp;id=b1b8cbfe93&c=?"
+        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+        <div>
+          <div class="statusMessageDiv">
+            Use the form below to drop us a message or simply call us at 9699638333
+          </div>
+          <div class="border">
+            <input placeholder="Name (optional)" type="text" name="NAME" class="textInput"></input>
+          </div>
+          <div class="border">
+            <input placeholder="Email Address *" type="email" name="EMAIL" class="textInput"></input>
+          </div>
+          <div class="border">
+            <input placeholder="Phone Number (optional)" type="text" name="PHONE" class="textInput"></input>
+          </div>
+          <div class="border">
+            <input placeholder="Message (optional)" type="text" name="MESSAGE" class="textInput"></input>
+          </div>
+          <div class="servicesInputDiv">
+            <p>Services interested in (optional)</p>
+            <ul class="servicesInputList">
+              <li><input type="checkbox" value="2" name="group[961][2]" id="mce-group[961]-961-0"><label
+                  for="mce-group[961]-961-0">Video Production</label></li>
+              <li><input type="checkbox" value="4" name="group[961][4]" id="mce-group[961]-961-1"><label
+                  for="mce-group[961]-961-1">Music Production</label></li>
+              <li><input type="checkbox" value="8" name="group[961][8]" id="mce-group[961]-961-2"><label
+                  for="mce-group[961]-961-2">Event Coverage</label></li>
+              <li><input type="checkbox" value="16" name="group[961][16]" id="mce-group[961]-961-3"><label
+                  for="mce-group[961]-961-3">Tech Communication</label></li>
+            </ul>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+              name="b_e23d6c4c939fe3d0277691daa_b1b8cbfe93" tabindex="-1" value=""></div>
+          <div class="clear"><input type="submit" value="Send" name="subscribe" class="btnContact submitButton"></input>
+          </div>
+
+        </div>
+      </form>
+      <div id="status" class="statusMessageDiv">
+      </div>
+    </div>
+
 
     <!-- Footer -->
     <div class="footer">

@@ -15,6 +15,8 @@ $(document).ready(function () {
     }
     $(".navigation-narrow").on("click", toggleMobileNav)
 
+    $(".mobileNavOverlay-content a").on("click", toggleMobileNav)
+
     const stripSize = 4
 
     $.getJSON("data/featured.json", function (result) {
@@ -35,4 +37,33 @@ $(document).ready(function () {
         $(".divVideo iframe")[0].src = ""
         $(".divVideo").hide()
     })
+    var $form = $('form');
+
+    if ($form.length > 0) {
+        $('form input[type="submit"]').bind('click', function (event) {
+            if (event) event.preventDefault();
+            // validate_input() is a validation function I wrote, you'll have to substitute this with your own.
+            register($form)
+        });
+    }
+
+    function register($form) {
+        $("#status").empty()
+        $.ajax({
+            type: $form.attr('method'),
+            url: $form.attr('action'),
+            data: $form.serialize(),
+            cache: false,
+            dataType: 'json',
+            contentType: "application/json; charset=utf-8",
+            error: function (err) { alert("Could not connect to the registration server. Please try again later."); },
+            success: function (data) {
+                if (data.result != "success")
+                    $("#status").append(data.msg)
+                else
+                    $("#status").append("Your message has been sent. We'll get back to you soon!")
+
+            }
+        });
+    }
 })
