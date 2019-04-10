@@ -4,6 +4,9 @@ $(document).ready(function () {
         sensitivity: 'high'
     });
 
+    var cw = $('.service').width();
+    $('.service').css({ 'height': cw + 'px' });
+
     var isMobineNavVisible = false
     $(".mobileNavOverlay").hide()
     toggleMobileNav = () => {

@@ -1,16 +1,21 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
 body {
-    background-color: #261F1C
+    background-color: #FFFFFF
+}
+
+h2 {
+    padding: 5%;
+    background-color: #EFEFEF
 }
 
 h3 {
-    color: white
+    color: #0D0D0D
 }
 
 .navbar-fixed-top {
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: #0D0D0D;
     justify-content: flex-end;
     padding-right: 2%;
     height: 7%
@@ -18,9 +23,9 @@ h3 {
 
 .navbar-fixed-top-black {
     display: flex;
-    background-color: #261F1C !important;
+    background-color: #FFFFFF !important;
     transition: background-color 500ms linear;
-    color: #fff !important;
+    color: #0D0D0D !important;
     position: fixed;
     right: 0;
     left: 0;
@@ -33,22 +38,23 @@ h3 {
 .logo {
     height: 150px;
     width: 150px;
-    background-color: #261F1C;
+    background-color: #FFFFFF;
     position: absolute;
     left: 3vw;
     font-size: xx-large;
     text-align: center;
-    z-index: 1032
+    z-index: 1032;
+    color: #000
 }
 
 .navigation-wide a {
     position: relative;
-    color: #fff;
+    color: #0D0D0D;
     text-decoration: none;
 }
 
 .navigation-wide a:hover {
-    color: #fff;
+    color: #0D0D0D;
 }
 
 .navigation-wide a:before {
@@ -58,7 +64,7 @@ h3 {
     height: 2px;
     bottom: -15px;
     left: 0;
-    background-color: #fff;
+    background-color: #0D0D0D;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -111,7 +117,7 @@ h3 {
     outline: none;
 }
 
-.service img:hover {
+/* .service img:hover {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -128,7 +134,7 @@ h3 {
     -moz-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255);
     box-shadow: 0px 0px 30px 0px rgba(255, 255, 255);
     transition: all 0.3s ease-in-out 0s;
-}
+} */
 
 #ourwork {
     padding-top: 7%;
@@ -224,7 +230,7 @@ h3 {
     cursor: pointer;
 }
 
-.service span {
+.service h4 {
     margin: auto;
     color: white;
     margin-top: 20px
@@ -238,7 +244,7 @@ h3 {
 }
 
 #worldMap {
-    background-color: #222;
+    background-color: #fff;
     height: auto;
     scroll-snap-align: center;
     position: relative;
@@ -260,7 +266,7 @@ h3 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #261F1C;
+    background-color: #FFFFFF;
     position: relative;
     padding: 10vh 0 10vh 0;
 }
@@ -300,7 +306,7 @@ h3 {
 }
 
 .statusMessageDiv {
-    color: #fff;
+    color: #0D0D0D;
     padding-bottom: 5vh;
 }
 
@@ -309,7 +315,7 @@ h3 {
     -moz-appearance: none;
     appearance: none;
     font-size: 14px;
-    color: #fff;
+    color: #0D0D0D;
     letter-spacing: 1px;
     font-family: 'BrandonGrotesque-Regular', sans-serif;
     font-weight: 400;
@@ -373,7 +379,7 @@ h3 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #261F1C;
+    background-color: #0D0D0D;
     height: 30vh;
     /* scroll-snap-align: end; */
     position: relative;
@@ -443,7 +449,7 @@ h3 {
         margin: 3%;
     }
     .navigation-wide a li {
-        color: #fff;
+        color: #0D0D0D;
     }
     .logo {
         height: 150px;
@@ -460,24 +466,159 @@ h3 {
         height: 90vh
     }
     .section {
-        padding: 30vh 15vw 30vh 15vw;
-        color: #fff;
-        background-color: #29282E;
+        padding: 20vh 15vw 20vh 15vw;
+        color: #0D0D0D;
+        background-color: #fff;
+        text-align: justify
+    }
+    .headerSection {
+        margin: 0 15vw 0 15vw;
+        color: #0D0D0D;
+        background-color: #EFEFEF;
         text-align: justify
     }
     .servicesSection {
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
-        background-color: #261F1C;
-        height: 100vh;
+        background-color: #FFFFFF;
+        /* height: 100vh; */
         scroll-snap-align: center;
         position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
     .service {
-        margin-top: 20vh;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+    .service img {
+        object-fit: contain;
+        margin-top: auto
+    }
+    .video {
+        background-color: #6BBAA7
+    }
+    .music {
+        background-color: #FBA100
+    }
+    .event {
+        background-color: #FF383F
+    }
+    .tech {
+        background-color: #6C648B
+    }
+    .foundersSection {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10%;
+    }
+    .foundersSection img, .content-overlay {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    /* Overlay */
+    @import url(https://fonts.googleapis.com/css?family=Raleway);
+    *, *:before, *:after {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    /* body{
+      background: #f9f9f9;
+      font-size: 16px;
+      font-family: 'Raleway', sans-serif;
+    } */
+    .main-title {
+        color: #2d2d2d;
+        text-align: center;
+        text-transform: capitalize;
+        padding: 0.7em 0;
+    }
+    .container {
+        padding: 1em 0;
+        float: left;
+        width: 50%;
+    }
+    @media screen and (max-width: 640px) {
+        .container {
+            display: block;
+            width: 100%;
+        }
+    }
+    @media screen and (min-width: 900px) {
+        .container {
+            width: 33.33333%;
+        }
+    }
+    .container .title {
+        color: #1a1a1a;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .content {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .content .content-overlay {
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in-out 0s;
+        -moz-transition: all 0.4s ease-in-out 0s;
+        transition: all 0.4s ease-in-out 0s;
+    }
+    .content:hover .content-overlay {
+        opacity: 1;
+    }
+    .content-image {
+        width: 100%;
+    }
+    .content-details {
+        position: absolute;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
+        top: 60%;
+        left: 45%;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .content:hover .content-details {
+        top: 60%;
+        left: 45%;
+        opacity: 1;
+    }
+    .content-details h3 {
+        color: #fff;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+    }
+    .content-details p {
+        color: #fff;
+        font-size: 0.8em;
+    }
+    .fadeIn-bottom {
+        top: 80%;
     }
 }
 
@@ -505,7 +646,7 @@ h3 {
     .section {
         padding: 15vh 15vw 15vh 15vw;
         color: #fff;
-        background-color: #222;
+        background-color: #fff;
         text-align: justify
     }
     .servicesSection {
@@ -513,7 +654,7 @@ h3 {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        background-color: #261F1C;
+        background-color: #FFFFFF;
         height: 100vh;
         scroll-snap-align: center;
         position: relative;
