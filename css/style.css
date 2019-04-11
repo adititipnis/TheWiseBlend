@@ -440,6 +440,7 @@ h3 {
     width: 70px;
     height: 70px;
     z-index: 2;
+    margin: auto;
     margin-top: 10%
 }
 
@@ -449,7 +450,8 @@ h3 {
     justify-content: space-around;
     background-image: url(../images/music-process.jpg);
     background-size: cover;
-    padding: 10px 10px 400px 10px
+    padding: 10px 10px 10px 10px;
+    flex-basis: 0;
 }
 
 .circle span {
@@ -461,6 +463,15 @@ h3 {
 .process span {
     display: table-cell;
     vertical-align: middle;
+}
+
+.process-desc {
+    color: #fff;
+    margin:5%;
+    text-align: center;
+    margin-top: 10%;
+    padding:5%;
+    background-color: rgba(0, 0, 0, .6)
 }
 
 /*Wide*/
