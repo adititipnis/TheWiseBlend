@@ -430,6 +430,39 @@ h3 {
     transform: translate3d(0, 0, 0);
 }
 
+.circle {
+    display: table;
+    border-width: 10px;
+    border-color: #fff;
+    border-style: solid;
+    border-radius: 50%;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    margin-top: 10%
+}
+
+.process {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(/images/music-process.jpg);
+    background-size: cover;
+    padding: 10px 10px 400px 10px
+}
+
+.circle span {
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff
+}
+
+.process span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 /*Wide*/
 
 @media screen and (min-width: 480px) {
@@ -492,6 +525,23 @@ h3 {
         display: flex;
         flex-direction: column;
         flex: 1 1 auto;
+    }
+    .musicService {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        width: 20%;
+        color: #fff;
+        text-align: center;
+    }
+    .musicService h4 {
+        margin: auto
+    }
+    .service a {
+        object-fit: contain;
+        margin: auto;
+        text-align: center;
+        text-decoration: none;
     }
     .service img {
         object-fit: contain;

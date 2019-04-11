@@ -7,6 +7,9 @@ $(document).ready(function () {
     var cw = $('.service').width();
     $('.service').css({ 'height': cw + 'px' });
 
+    var cw = $('.musicService').width();
+    $('.musicService').css({ 'height': cw + 'px' });
+
     var isMobineNavVisible = false
     $(".mobileNavOverlay").hide()
     toggleMobileNav = () => {
