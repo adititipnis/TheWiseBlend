@@ -447,7 +447,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-image: url(.../images/music-process.jpg);
+    background-image: url(../images/music-process.jpg);
     background-size: cover;
     padding: 10px 10px 400px 10px
 }
