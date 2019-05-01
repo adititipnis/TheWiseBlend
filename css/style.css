@@ -221,7 +221,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
     position: relative;
 }
 
@@ -240,13 +240,13 @@ h3 {
     overflow: scroll;
     scroll-behavior: smooth;
     height: 100vh;
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
 }
 
 #worldMap {
     background-color: #fff;
     height: auto;
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
     position: relative;
     text-align: center;
     padding-top: 10vh
@@ -467,12 +467,52 @@ h3 {
 
 .process-desc {
     color: #fff;
-    margin:5%;
+    margin: 5%;
     text-align: center;
     margin-top: 10%;
-    padding:5%;
+    padding: 5%;
     background-color: rgba(0, 0, 0, .6)
 }
+
+#useCases {
+    margin: auto;
+}
+
+.useCase {
+    display: flex;
+    flex-direction: row;
+    margin: 2%
+}
+/* 
+.userCaseEven {
+    flex-direction: row-reverse
+} */
+
+.useCaseName {
+    background-color: #FBA100;
+    color: #FFFFFF;
+    padding: 3%;
+    font-weight: bold;
+    width: 32%;
+    margin:auto;
+}
+
+.useCaseDesc {
+    opacity: 0;
+    padding: 3%;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #FBA100, #FFFFFF);
+    flex-grow: 1;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    
+}
+
+/* .userCaseEven .useCaseDesc {
+    background-image: linear-gradient(to right, #FBA100, #FFFFFF);
+} */
 
 /*Wide*/
 
@@ -515,6 +555,10 @@ h3 {
         background-color: #fff;
         text-align: justify
     }
+    .useCasesSection {
+        display: flex;
+        flex-direction: column;
+    }
     .headerSection {
         margin: 0 15vw 0 15vw;
         color: #0D0D0D;
@@ -526,7 +570,7 @@ h3 {
         align-items: center;
         background-color: #FFFFFF;
         /* height: 100vh; */
-        scroll-snap-align: center;
+        /* scroll-snap-align: center; */
         position: relative;
         width: 100%;
         display: flex;
@@ -717,7 +761,7 @@ h3 {
         align-items: center;
         background-color: #FFFFFF;
         height: 100vh;
-        scroll-snap-align: center;
+        /* scroll-snap-align: center; */
         position: relative;
     }
     .service {
