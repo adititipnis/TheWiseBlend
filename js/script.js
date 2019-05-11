@@ -73,9 +73,17 @@ $(document).ready(function () {
         });
     }
 
-    $(".useCaseName").on("mouseover", function() {
+    $(".useCaseName").on("mouseover", function () {
         $(this).next().css({ 'opacity': 1 });
     })
+
+    $('.serviceCard').on('mouseover', function () {
+        this.classList.toggle('is-flipped');
+    });
+
+    $('.serviceCard').on('mouseout', function () {
+        this.classList.toggle('is-flipped');
+    });
 
 
     function drawCircle(cx, cy, r) {
@@ -137,15 +145,15 @@ $(document).ready(function () {
     }
 
     function getBubbleText(circleNumber) {
-        switch(circleNumber) {
-            case 0 : return "PRODUCTION"
-            case 1 : return "SONGWRITING/\
+        switch (circleNumber) {
+            case 0: return "PRODUCTION"
+            case 1: return "SONGWRITING/\
             COMPOSITION"
-            case 2 : return "VOCAL\
+            case 2: return "VOCAL\
             PRODUCTION"
-            case 3 : return "MIXING/\
+            case 3: return "MIXING/\
             MASTERING"
-            case 4 : return "SOUND SUITES"
+            case 4: return "SOUND SUITES"
             //default : return "SONGWRITING/COMPOSITION"
         }
     }
