@@ -801,6 +801,9 @@ h3 {
         width: 150px;
         font-size: xx-large;
     }
+    .logo a {
+        text-decoration: none;
+    }
     #carouselExampleIndicators {
         top: 8%
     }
