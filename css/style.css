@@ -500,21 +500,7 @@ h3 {
     display: flex;
     flex-direction: row;
     margin: 2%
-}
-
-/* 
-.userCaseEven {
-    flex-direction: row-reverse
-} */
-
-/* .useCaseName {
-    background-color: #FBA100;
-    color: #FFFFFF;
-    padding: 3%;
-    font-weight: bold;
-    width: 32%;
-    margin:auto;
-} */
+} 
 
 .useCases {
     /* display: flex;
@@ -531,6 +517,7 @@ h3 {
     border: solid;
     border-color: #dddddd;
     border-width: 5px;
+    font-size: 18px;
     font-weight: bold;
     padding: 1% 1%;
     margin: 1%;
@@ -686,13 +673,13 @@ h3 {
 
 .tooltip:after, [data-tooltip]:after {
     z-index: 1000;
-    padding: 8px;
+    padding: 10px;
     width: 300px;
     background-color: #000;
     background-color: hsla(0, 0%, 20%, 0.9);
     color: #fff;
     content: attr(data-tooltip);
-    font-size: 14px;
+    font-size: 18px;
     line-height: 2;
 }
 
@@ -820,7 +807,8 @@ h3 {
     .navigation-wide li {
         list-style-type: none;
         white-space: nowrap;
-        padding: 2.5%
+        padding: 2.5%;
+        font-weight: bold;
     }
     .navigation-wide a {
         margin: 3%;
@@ -875,12 +863,12 @@ h3 {
     .service {
         display: flex;
         flex-direction: column;
-        flex: 1 1 auto;
+        flex: 1;
     }
     .musicService {
         display: flex;
         flex-direction: column;
-        flex: 1 1 auto;
+        flex: 1;
         width: 20%;
         color: #fff;
         text-align: center;
