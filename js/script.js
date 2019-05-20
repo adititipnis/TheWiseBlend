@@ -91,10 +91,8 @@ $(document).ready(function () {
     });
 
     $('.homeService').on('mouseleave', function () {
-        setTimeout(() => {
-            $(this).find('img').removeClass('hover')
-            $(this).find('h4').removeClass('hover')
-            $(this).find('p').removeClass('hover')
-        }, 1500);
+        $(this).find('img').removeClass('hover')
+        $(this).find('h4').removeClass('hover')
+        $(this).find('p').removeClass('hover')
     });
 })
