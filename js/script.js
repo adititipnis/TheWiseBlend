@@ -70,15 +70,17 @@ $(document).ready(function () {
         });
     }
 
-    $(".useCaseName").on("mouseover", function () {
+    $(".useCaseName").on("mouseenter", function () {
         $(this).next().css({ 'opacity': 1 });
     })
 
-    $('.serviceCard').on('mouseover', function () {
+    $('.serviceCard').on('mouseenter', function () {
         this.classList.toggle('is-flipped');
     });
 
-    $('.serviceCard').on('mouseout', function () {
-        this.classList.toggle('is-flipped');
+    $('.serviceCard').on('mouseleave', function () {
+        setTimeout(() => {
+            this.classList.toggle('is-flipped');
+        }, 500);
     });
 })
