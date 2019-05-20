@@ -70,9 +70,9 @@ $(document).ready(function () {
         });
     }
 
-    $(".useCaseName").on("mouseenter", function () {
-        $(this).next().css({ 'opacity': 1 });
-    })
+    // $(".useCaseName").on("mouseenter", function () {
+    //     $(this).next().css({ 'opacity': 1 });
+    // })
 
     $('.serviceCard').on('mouseenter', function () {
         this.classList.toggle('is-flipped');
@@ -81,6 +81,20 @@ $(document).ready(function () {
     $('.serviceCard').on('mouseleave', function () {
         setTimeout(() => {
             this.classList.toggle('is-flipped');
-        }, 500);
+        }, 1500);
+    });
+
+    $('.homeService').on('mouseenter', function () {
+        $(this).find('img').addClass('hover')
+        $(this).find('h4').addClass('hover')
+        $(this).find('p').addClass('hover')
+    });
+
+    $('.homeService').on('mouseleave', function () {
+        setTimeout(() => {
+            $(this).find('img').removeClass('hover')
+            $(this).find('h4').removeClass('hover')
+            $(this).find('p').removeClass('hover')
+        }, 1500);
     });
 })
