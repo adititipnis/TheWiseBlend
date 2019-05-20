@@ -449,7 +449,7 @@ h3 {
     height: 70px;
     z-index: 2;
     margin: auto;
-    margin-top: 10%
+    margin-top: 50px;
 }
 
 .process {
@@ -487,9 +487,13 @@ h3 {
     color: #fff;
     margin: 5%;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 30px;
     padding: 5%;
     background-color: rgba(0, 0, 0, .6)
+}
+
+.process-step {
+    width: 20%;
 }
 
 #useCases {
@@ -1091,11 +1095,15 @@ h3 {
         -ms-transform: rotateY(-180deg);
         transform: rotateY(-180deg);
     }
-    .homeService img, h4, p {
-        transition: all 0.6s;
+    .homeService img, h4 {
+        transition: all 1s;
     }
     .homeService p {
         transition: all 1s;
+        cursor: pointer;
+    }
+    .homeService .link {
+        text-decoration: underline;
     }
     .homeService img.hover {
         width: 0;
