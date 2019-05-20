@@ -1038,6 +1038,8 @@ h3 {
         position: relative;
         margin-left: 1px;
         margin-right: 1px;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
         transform: translateX(0%) rotateY(0deg);
         box-shadow: 0 0 0 #000;
         transform: translate3d(0, 0, 0)
