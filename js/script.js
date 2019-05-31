@@ -41,7 +41,7 @@ $(document).ready(function () {
     $(document).on("click", ".imgFeatured", function () {
         console.log($(this).attr("value"))
         $(".divVideo iframe")[0].src = $(this).attr("value")
-        if ($(this).attr("data-caption").value)
+        if ($(this).attr("data-caption").length > 0)
             $(".divVideo p")[0].innerHTML = $(this).attr("data-caption")
         $(".divVideo").show()
     })

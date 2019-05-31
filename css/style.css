@@ -11,7 +11,7 @@ body {
     font-family: 'Futura'
 }
 
-#start {
+#start, .spaceOut {
     margin-top: 10%;
 }
 
@@ -227,13 +227,9 @@ h3 {
 }
 
 #videoClose {
-    display: inline-block;
-    margin: auto;
     position: absolute;
-    top: 0;
-    left: 81vw;
-    bottom: 0;
-    right: 0;
+    top: 10%;
+    left: 81%;
     color: white;
     font-size: 40px;
     text-decoration: none;
@@ -846,9 +842,9 @@ h3 {
   }
   @media (max-width: 800px) {
     .musicFeaturedSection {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
     }
   }
   @media (max-width: 400px) {
