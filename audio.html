@@ -86,7 +86,7 @@
 
         </nav>
         <!-- Carousel -->
-        <div id="carouselExampleIndicators" class="carousel slide my-carousel" data-ride="carousel">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide my-carousel" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -114,12 +114,12 @@
             <div class="divBtnContact">
                 <a href="/index.html#contactSection"><button class="btnContact">LET'S GET TALKING</button></a>
             </div>
-        </div>
+        </div> -->
 
         <!-- {this.state.isMobileNavVisible && <MobileNav close={this.hideMobileNav} />} -->
 
         <!-- Hello -->
-        <h2>Music</h2>
+        <h2 id="start">Audio</h2>
         <div id="hello" class="section">
 
 
@@ -220,6 +220,10 @@
             </div>
         </div>
 
+        <h2>Featured</h2>
+        <div class="musicFeaturedSection">
+            
+        </div>
 
         <h2>Use Cases</h2>
 
@@ -266,6 +270,7 @@
     <iframe title="video" id="video-1" width="560" height="315" src="abc" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen="allowfullscreen" seamless=""></iframe>
+        <p id="caption"> </p>
     <span href="#" id="videoClose" onClick={props.close}>X</span>
 </div>
 

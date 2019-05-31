@@ -30,9 +30,19 @@ $(document).ready(function () {
         }
     });
 
+    $.getJSON("data/music-featured.json", function (result) {
+        if (result.length) {
+            result.forEach(featured => {
+                $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".musicFeaturedSection")
+            })
+        }
+    });
+
     $(document).on("click", ".imgFeatured", function () {
         console.log($(this).attr("value"))
         $(".divVideo iframe")[0].src = $(this).attr("value")
+        if ($(this).attr("data-caption").value)
+            $(".divVideo p")[0].innerHTML = $(this).attr("data-caption")
         $(".divVideo").show()
     })
 

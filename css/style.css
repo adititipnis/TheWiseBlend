@@ -11,6 +11,10 @@ body {
     font-family: 'Futura'
 }
 
+#start {
+    margin-top: 10%;
+}
+
 h2 {
     padding: 5%;
     background-color: #EFEFEF
@@ -203,6 +207,17 @@ h3 {
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+#caption {
+        width: 60%;
+        margin: auto;
+        position: absolute;
+        top: 85%;
+        left: 0;
+        right: 0;
+        color: #fff;
+        font-size: x-large;
 }
 
 .click-1 {
@@ -489,7 +504,8 @@ h3 {
     text-align: center;
     margin-top: 30px;
     padding: 5%;
-    background-color: rgba(0, 0, 0, .6)
+    background-color: rgba(0, 0, 0, .6);
+    height: 60%;
 }
 
 .process-step {
@@ -793,6 +809,55 @@ h3 {
     margin-left: 0;
     margin-bottom: -16px;
 }
+
+.musicFeaturedSection {
+    /* Prevent vertical gaps */
+    line-height: 0;
+     
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;  
+  }
+  
+  .musicFeaturedSection img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  @media (max-width: 1200px) {
+    .musicFeaturedSection {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    .musicFeaturedSection {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 800px) {
+    .musicFeaturedSection {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 400px) {
+    .musicFeaturedSection {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
 
 /* .userCaseEven .useCaseDesc {
     background-image: linear-gradient(to right, #FBA100, #FFFFFF);
@@ -1239,5 +1304,8 @@ h3 {
     }
     #worldMap img {
         max-width: 100%
+    }
+    #rig li {
+        width: 50%;
     }
 }
