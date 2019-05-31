@@ -209,7 +209,7 @@ h3 {
     right: 0;
 }
 
-#caption {
+.divVideo #caption {
         width: 60%;
         margin: auto;
         position: absolute;
@@ -218,6 +218,16 @@ h3 {
         right: 0;
         color: #fff;
         font-size: x-large;
+}
+
+.portfolio iframe {
+    height: 60vh;
+    width: 60vw;
+}
+
+.portfolio #caption {
+    color: #0D0D0D;
+    font-size: x-large;
 }
 
 .click-1 {
