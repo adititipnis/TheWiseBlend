@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    let searchParams = new URLSearchParams(window.location.search)
+    if (searchParams.has('name')) {
+        window.location.href = "/portfolio?name=" + searchParams.get('name')
+    }
+
     $('.my-carousel').carousel().swipeCarousel({
         // low, medium or high
         sensitivity: 'high'
