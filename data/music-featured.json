@@ -106,12 +106,12 @@
 
     },
     {
-        "img": "images/JeepAd.png",
-        "url": "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstoryweaversindia%2Fvideos%2F1772698546085931%2F&show_text=0&width=560",
+        "img": "https://ik.imagekit.io/adititipnis/JeepAd_V0b0i1fNQ.png",
+        "url": "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstoryweaversindia%2Fvideos%2F1772698546085931%2F&show_text=0&width=560&mute=0",
         "caption": "Composer & Producer: Shrai Pradhan &AnupSatam"
     },
     {
-        "img": "https://ik.imagekit.io/adititipnis/JeepAd_V0b0i1fNQ.png",
+        "img": "https://ik.imagekit.io/adititipnis/LazySummerDays_RD8yy58OX.png",
         "url": "https://embed.beatport.com/?id=9562577&type=track",
         "caption": "Remixer: SHRAi"
     },
@@ -216,7 +216,7 @@
     },
     {
         "img": "https://ik.imagekit.io/adititipnis/Vadilal_3WTtA87CN.jpg",
-        "url": "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffullcirclecommunications%2Fvideos%2F1869479273066053%2F&show_text=0&width=560",
+        "url": "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffullcirclecommunications%2Fvideos%2F1869479273066053%2F&show_text=0&width=560&mute=0",
         "caption": "Guitars: AnupSatam"
     }
 ]
