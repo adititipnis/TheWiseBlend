@@ -1340,3 +1340,7 @@ h3 {
     text-decoration: none;
     color: #fff;
 }
+
+#video-1 {
+    background:url(https://cdn-images-1.medium.com/max/1600/0*7XYBNxqZdTkLrDHj.gif) center center no-repeat;
+  }
