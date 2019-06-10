@@ -120,4 +120,15 @@ $(document).ready(function () {
         $(this).find('h4').removeClass('hover')
         $(this).find('p').removeClass('hover')
     });
+
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function () {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000);
 })
