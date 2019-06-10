@@ -41,6 +41,8 @@ $(document).ready(function () {
                 $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".musicFeaturedSection")
             })
         }
+        var cw = $('.service').width()
+        $(".musicFeaturedSection img").css({ 'height': cw + 'px' })
     });
 
     $.getJSON("data/video-featured.json", function (result) {

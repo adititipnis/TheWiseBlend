@@ -830,7 +830,7 @@ h3 {
   
   .musicFeaturedSection img, .videoFeaturedSection img {
     width: 100% !important;
-    height: 269.797px !important;
+    /* height: 269.797px !important; */
     border: 1px solid #fff;
     cursor: pointer;
     object-fit: cover;
@@ -1198,6 +1198,10 @@ h3 {
     .homeService p.hover {
         opacity: 1;
     }
+
+    .musicFeaturedSection img, .videoFeaturedSection img {
+        height: 269.797px !important;
+    }
     /* .serviceCard {
         transition-property: all;
         transition-duration: 1s;
@@ -1222,7 +1226,7 @@ h3 {
 
 /*Narrow*/
 
-@media screen and (max-width: 480px) {
+    @media screen and (max-width: 480px) {
     .navigation-wide {
         display: none
     }
@@ -1313,6 +1317,10 @@ h3 {
     }
     #rig li {
         width: 50%;
+    }
+
+    .musicFeaturedSection img, .videoFeaturedSection img {
+        height: 120px !important;
     }
 }
 
