@@ -269,7 +269,6 @@ h3 {
 }
 
 .mainContainer {
-    overflow: scroll;
     scroll-behavior: smooth;
     height: 100vh;
     /* scroll-snap-type: y proximity; */
@@ -532,17 +531,17 @@ h3 {
 }
 
 .useCases {
-    /* display: flex;
-    flex-direction: row; */
     justify-content: space-around;
-    background-image: url(../images/video-process.jpg);
-    background-size: cover;
+    background-image: url(../images/usecasebackgreen.png);
+    background-size: contain;
     padding: 10px 10px 10px 10px;
     flex-basis: 0;
+    background-position-x: center;
+    background-repeat: no-repeat;
 }
 
 .useCaseName {
-    color: #FFFFFF;
+    color: #0D0D0D;
     border: solid;
     border-color: #dddddd;
     border-width: 5px;
@@ -1497,4 +1496,27 @@ html { text-align:center; }
 .svg-item {
   max-width:30%;
   display:inline-block;
+}
+
+.brand {
+    object-fit: contain;
+    width: 11.5vw;
+    text-align: center;
+}
+
+.brand img{
+    height: 10vh;
+    object-fit: contain;
+    width: 10vw;
+}
+
+.brandsSection {
+    width: 1000vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.brands {
+    margin-left: 15vw;
+    display: flex;
 }

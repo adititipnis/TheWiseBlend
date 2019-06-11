@@ -131,4 +131,19 @@ $(document).ready(function () {
             .end()
             .appendTo('#slideshow');
     }, 3000);
+
+    $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
+    currentSection = 0
+    var section
+
+
+    setInterval(() => {
+        if (currentSection == 0)
+            $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-84vw" })
+        else if (currentSection == 1)
+            $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-170vw" })
+        else if (currentSection == 2)
+            $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
+        currentSection < 2 ? currentSection++ : currentSection = 0
+    }, 1000)
 })
