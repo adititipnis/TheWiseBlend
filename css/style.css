@@ -898,6 +898,12 @@ h3 {
         width: 150px;
         font-size: xx-large;
     }
+    .logo img {
+        transition: all 0.5s;
+    }
+    .logo img:hover {
+        height: 150%;
+    }
     .logo a {
         text-decoration: none;
     }
