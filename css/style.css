@@ -213,14 +213,14 @@ h3 {
 }
 
 .divVideo #caption {
-        width: 60%;
-        margin: auto;
-        position: absolute;
-        top: 85%;
-        left: 0;
-        right: 0;
-        color: #fff;
-        font-size: x-large;
+    width: 60%;
+    margin: auto;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: x-large;
 }
 
 .portfolio iframe {
@@ -821,16 +821,15 @@ h3 {
 .musicFeaturedSection, .videoFeaturedSection {
     /* Prevent vertical gaps */
     line-height: 0;
-     
     -webkit-column-count: 5;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    5;
-    -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;  
-  }
-  
-  .musicFeaturedSection img, .videoFeaturedSection img {
+    -webkit-column-gap: 0px;
+    -moz-column-count: 5;
+    -moz-column-gap: 0px;
+    column-count: 5;
+    column-gap: 0px;
+}
+
+.musicFeaturedSection img, .videoFeaturedSection img {
     width: 100% !important;
     /* height: 269.797px !important; */
     border: 1px solid #fff;
@@ -838,34 +837,37 @@ h3 {
     object-fit: cover;
 }
 
-  @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     .musicFeaturedSection, .videoFeaturedSection {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
     }
-  }
-  @media (max-width: 1000px) {
+}
+
+@media (max-width: 1000px) {
     .musicFeaturedSection, .videoFeaturedSection {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
     }
-  }
-  @media (max-width: 800px) {
+}
+
+@media (max-width: 800px) {
     .musicFeaturedSection, .videoFeaturedSection {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
     }
-  }
-  @media (max-width: 400px) {
+}
+
+@media (max-width: 400px) {
     .musicFeaturedSection, .videoFeaturedSection {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
     }
-  }
+}
 
 /* .userCaseEven .useCaseDesc {
     background-image: linear-gradient(to right, #FBA100, #FFFFFF);
@@ -1206,7 +1208,6 @@ h3 {
     .homeService p.hover {
         opacity: 1;
     }
-
     .musicFeaturedSection img, .videoFeaturedSection img {
         height: 269.797px !important;
     }
@@ -1234,7 +1235,7 @@ h3 {
 
 /*Narrow*/
 
-    @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .navigation-wide {
         display: none
     }
@@ -1326,7 +1327,6 @@ h3 {
     #rig li {
         width: 50%;
     }
-
     .musicFeaturedSection img, .videoFeaturedSection img {
         height: 120px !important;
     }
@@ -1358,18 +1358,18 @@ h3 {
 }
 
 #video-1 {
-    background:url(https://cdn-images-1.medium.com/max/1600/0*7XYBNxqZdTkLrDHj.gif) center center no-repeat;
-  }
+    background: url(https://cdn-images-1.medium.com/max/1600/0*7XYBNxqZdTkLrDHj.gif) center center no-repeat;
+}
 
 .svg-item {
-    width: 100%;
+    width: 75%;
     font-size: 16px;
     margin: 0 auto;
     animation: donutfade 1s;
 }
 
 @keyframes donutfade {
-  /* this applies to the whole svg item wrapper */
+    /* this applies to the whole svg item wrapper */
     0% {
         opacity: .2;
     }
@@ -1380,7 +1380,7 @@ h3 {
 
 @media (min-width: 992px) {
     .svg-item {
-        width: 80%;
+        width: 24%;
     }
 }
 
@@ -1390,28 +1390,44 @@ h3 {
 
 .donut-segment {
     transform-origin: center;
-    stroke: #FF6200;
+    stroke: #23B18E;
 }
 
 .donut-segment-2 {
-    stroke: aqua;
+    stroke: #23B18E;
     animation: donut1 3s;
 }
 
 .donut-segment-3 {
-    stroke: #d9e021;
+    stroke: #23B18E;
     animation: donut2 3s;
 }
 
 .donut-segment-4 {
-    stroke: #ed1e79;
+    stroke: #23B18E;
+    animation: donut4 3s;
+}
+
+.donut-segment-5 {
+    stroke: #23B18E;
     animation: donut3 3s;
 }
 
-.segment-1{fill:#ccc;}
-.segment-2{fill:aqua;}
-.segment-3{fill:#d9e021;}
-.segment-4{fill:#ed1e79;}
+.segment-1 {
+    fill: #ccc;
+}
+
+.segment-2 {
+    fill: #23B18E;
+}
+
+.segment-3 {
+    fill: #ccc;
+}
+
+.segment-4 {
+    fill: #23B18E;
+}
 
 .donut-percent {
     animation: donutfadelong 1s;
@@ -1431,7 +1447,7 @@ h3 {
         stroke-dasharray: 0, 100;
     }
     100% {
-        stroke-dasharray: 69, 31;
+        stroke-dasharray: 64, 36;
     }
 }
 
@@ -1440,31 +1456,47 @@ h3 {
         stroke-dasharray: 0, 100;
     }
     100% {
-        stroke-dasharray: 30, 70;
+        stroke-dasharray: calc(8*47.123889803847/60) 47.123889803847;
     }
 }
 
-@keyframes donut3{
+@keyframes donut3 {
     0% {
         stroke-dasharray: 0, 100;
     }
     100% {
-        stroke-dasharray: 1, 99;
+        stroke-dasharray: 60, 40;
     }
+}
+
+@keyframes donut4 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 100, 0;
+    }    
 }
 
 .donut-text {
     font-family: Arial, Helvetica, sans-serif;
-    fill: #FF6200;
+    fill: #23B18E;
 }
+
 .donut-text-1 {
-    fill: aqua;
+    fill: #23B18E;
 }
+
 .donut-text-2 {
-    fill: #d9e021;
+    fill: #ccc;
 }
+
 .donut-text-3 {
-    fill: #ed1e79;
+    fill: #23B18E;
+}
+
+.donut-text-4 {
+    fill: #fff;
 }
 
 .donut-label {
@@ -1483,25 +1515,27 @@ h3 {
 }
 
 .donut-data {
-    font-size: 0.12em;
+    font-size: 0.13em;
     line-height: 1;
     transform: translateY(0.5em);
     text-align: center;
     text-anchor: middle;
-    color:#666;
+    color: #666;
     fill: #666;
     animation: donutfadelong 1s;
 }
 
-
-
-
 /* ---------- */
+
 /* just for this presentation */
-html { text-align:center; }
+
+html {
+    text-align: center;
+}
+
 .svg-item {
-  max-width:30%;
-  display:inline-block;
+    max-width: 30%;
+    display: inline-block;
 }
 
 .brand {
@@ -1510,7 +1544,7 @@ html { text-align:center; }
     text-align: center;
 }
 
-.brand img{
+.brand img {
     height: 10vh;
     object-fit: contain;
     width: 10vw;
