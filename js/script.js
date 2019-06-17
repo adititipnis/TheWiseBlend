@@ -9,8 +9,10 @@ $(document).ready(function () {
         sensitivity: 'high'
     });
 
-    var cw = $('.service').width();
-    $('.service').css({ 'height': cw + 'px' });
+    if ($(window).width() >= 800) {
+        var cw = $('.service').width();
+        $('.service').css({ 'height': cw + 'px' });
+    }
 
     var isMobineNavVisible = false
     $(".mobileNavOverlay").hide()

@@ -1,0 +1,116 @@
+/*Narrow*/
+
+@media screen and (max-width: 800px) {
+    body {
+        background-color: red;
+    }
+    .navigation-wide {
+        display: none
+    }
+    .navigation-narrow {
+        font-size: 30px;
+        cursor: pointer
+    }
+    #carouselExampleIndicators {
+        top: 5%
+    }
+    #hello {
+        padding-top: 25vh;
+    }
+    #hello h3 {
+        margin-top: 10vh
+    }
+    .logo {
+        height: 70px;
+        width: 60px;
+        font-size: medium;
+    }
+    .section {
+        padding: 10vh 10vw 10vh 10vw;
+    }
+    .servicesSection {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-evenly; */
+        align-items: center;
+        background-color: #FFFFFF;
+        /* height: 100vh; */
+        /* scroll-snap-align: center; */
+        position: relative;
+    }
+    .service {
+        display: flex;
+        flex-direction: column
+    }
+    .service a {
+        color: #fff;
+    }
+    .homeService {
+        width: 100vw;
+        height: 100vw;
+    }
+    .mobileNavOverlay {
+        display: flex;
+        height: auto;
+        width: 100%;
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        /* Black fallback color */
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        /* Black w/opacity */
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+        position: fixed;
+        z-index: 1030;
+        top: 7%;
+        margin-top: -15px
+    }
+    .mobileNavOverlay .closebtn {
+        margin-bottom: auto;
+        font-size: 60px;
+        color: white;
+        cursor: pointer;
+    }
+    .mobileNavOverlay-content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 0
+    }
+    .mobileNavOverlay-content li {
+        color: white;
+        align-content: space-around;
+        list-style: none;
+        /* border: 1px solid #666; */
+    }
+    .mobileNavOverlay-content a li {
+        padding: 5%;
+    }
+    #worldMap img {
+        max-width: 100%
+    }
+    #rig li {
+        width: 50%;
+    }
+    .musicFeaturedSection img, .videoFeaturedSection img {
+        height: 120px !important;
+    }
+    .foundersSection {
+        flex-direction: column;
+    }
+    .foundersSection img, .content-overlay {
+        width: 60vw;
+        height: 60vw;
+        margin-top: 10vw;
+    }
+}
