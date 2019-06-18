@@ -11,7 +11,7 @@ body {
     background-color: #FFFFFF;
     font-family: 'Lato';
     overflow-x: hidden;
-    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
 .section {
@@ -254,11 +254,13 @@ h3 {
     right: 0;
     color: #fff;
     font-size: x-large;
+    letter-spacing: 0.5px;
 }
 
 .portfolio #caption {
     color: #0D0D0D;
     font-size: x-large;
+    letter-spacing: 0.5px;
 }
 
 .click-1 {
@@ -586,6 +588,7 @@ h3 {
     align-items: center;
     text-align: center;
     justify-content: center;
+    letter-spacing: 0.5px;
 }
 
 .useCaseName:hover {
@@ -642,6 +645,7 @@ h3 {
 .bubbleText {
     color: #fff;
     font-size: 20px;
+    letter-spacing: 0.5px;
     /* position: relative;
     top: 10px;
     font-size: 20px; */
@@ -739,6 +743,7 @@ h3 {
     content: attr(data-tooltip);
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.5px;
 }
 
 /* Directions */
@@ -1076,6 +1081,7 @@ h3 {
     line-height: 1;
     fill: #000;
     transform: translateY(0.25em);
+    letter-spacing: 0.5px;
 }
 
 .donut-percent {
@@ -1094,6 +1100,7 @@ h3 {
     color: #666;
     fill: #666;
     animation: donutfadelong 1s;
+    letter-spacing: 0.5px;
 }
 
 /* ---------- */
@@ -1296,6 +1303,7 @@ html {
     -o-transform: rotateY(-180deg);
     -ms-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
+    letter-spacing: 0.5px;
 }
 
 .portfolio {
