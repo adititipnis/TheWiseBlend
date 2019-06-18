@@ -9,7 +9,7 @@ $(document).ready(function () {
         sensitivity: 'high'
     });
 
-    if ($(window).width() >= 800) {
+    if ($(window).width() >= 767) {
         var cw = $('.service').width();
         $('.service').css({ 'height': cw + 'px' });
     }

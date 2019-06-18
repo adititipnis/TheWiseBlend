@@ -1,6 +1,6 @@
 /*Narrow*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
     body {
         background-color: red;
     }
@@ -24,6 +24,9 @@
         height: 70px;
         width: 60px;
         font-size: medium;
+    }
+    .logo img {
+        height: 90%;
     }
     .section {
         padding: 10vh 10vw 10vh 10vw;
@@ -52,14 +55,14 @@
     .mobileNavOverlay {
         display: flex;
         height: auto;
-        width: 100%;
+        width: 100vw;
         position: fixed;
         /* Stay in place */
         z-index: 1;
         /* Sit on top */
         left: 0;
         top: 0;
-        background-color: rgb(0, 0, 0);
+        background-color: #fff;
         /* Black fallback color */
         /* background-color: rgba(0, 0, 0, 0.9); */
         /* Black w/opacity */
@@ -69,13 +72,12 @@
         /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
         position: fixed;
         z-index: 1030;
-        top: 7%;
-        margin-top: -15px
+        top: 6vh;
     }
     .mobileNavOverlay .closebtn {
         margin-bottom: auto;
         font-size: 60px;
-        color: white;
+        color: #0D0D0D;
         cursor: pointer;
     }
     .mobileNavOverlay-content {
@@ -85,13 +87,20 @@
         width: 100%;
         text-align: center;
         padding: 0;
-        margin-bottom: 0
+        margin-bottom: 0;
+        background-color: #ddd;
     }
     .mobileNavOverlay-content li {
-        color: white;
         align-content: space-around;
         list-style: none;
-        /* border: 1px solid #666; */
+        /* border: 0.5px solid #eee; */
+        /* width: 100vw; */
+        padding: 5%;
+        background-color: #fff;
+    }
+    .mobileNavOverlay-content li a {
+        color: #0D0D0D;
+        font-weight: bold;
     }
     .mobileNavOverlay-content a li {
         padding: 5%;
@@ -112,5 +121,11 @@
         width: 60vw;
         height: 60vw;
         margin-top: 10vw;
+    }
+    .video-infographics {
+        text-align: center;
+    }
+    .serviceCard {
+        height: 100vw;
     }
 }
