@@ -1,15 +1,17 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css";
 @font-face {
-    font-family: 'Futura';
+    font-family: 'Lato';
     /*a name to be used later*/
-    src: url('fonts/Futura Book font.ttf');
+    src: url('fonts/Lato Book font.ttf');
     /*URL to font*/
 }
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 body {
     background-color: #FFFFFF;
-    font-family: 'Futura';
+    font-family: 'Lato';
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 .section {
