@@ -114,7 +114,6 @@
         padding-right: 20%;
         font-size: 20px;
     }
-    
     .homeService img, h4 {
         transition: all 1s;
     }
@@ -154,12 +153,21 @@
         width: 20vw;
         height: 20vw;
     }
-
     .video-infographics {
         display: flex;
         flex-direction: row;
     }
     .video-infographics-1 {
         display: flex;
+    }
+    .videoProcess {
+        flex-direction: row;
+    }
+    .process-step {
+        width: 20%;
+    }
+    .portfolio iframe {
+        height: 60vh;
+        width: 60vw;
     }
 }

@@ -1,9 +1,9 @@
 /*Narrow*/
 
 @media screen and (max-width: 767px) {
-    body {
+    /* body {
         background-color: red;
-    }
+    } */
     .navigation-wide {
         display: none
     }
@@ -125,7 +125,14 @@
     .video-infographics {
         text-align: center;
     }
-    .serviceCard {
+    .serviceCard, .service {
         height: 100vw;
+        width: 100vw;
+    }
+    .videoProcess, .process {
+        flex-direction: column;
+    }
+    .portfolio iframe {
+        width: 70vw;
     }
 }
