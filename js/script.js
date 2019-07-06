@@ -9,10 +9,11 @@ $(document).ready(function () {
         sensitivity: 'high'
     });
 
-    if ($(window).width() >= 767) {
-        var cw = $('.service').width();
-        $('.service').css({ 'height': cw + 'px' });
-    }
+    // if ($(window).width() >= 767) {
+    //     var cw = $('.service').width();
+    //     $('.service').css({ 'height': cw + 'px' });
+    //     $('.service a').css({ 'height': cw + 'px' });
+    // }
 
     var isMobineNavVisible = false
     $(".mobileNavOverlay").hide()
@@ -30,11 +31,13 @@ $(document).ready(function () {
     const stripSize = 4
 
     $.getJSON("data/featured.json", function (result) {
-        while (result.length) {
-            var featuredStrip = result.splice(0, stripSize).map(featured => ("<span><img class='imgFeatured' value=" + featured.url + " src=" + featured.img + " /></span>"));
-            var featuredStripDiv = "<div class='featuredStrip'>" + featuredStrip.join('') + "</div>"
-            $(".featuredSection").append(featuredStripDiv)
+        if (result.length) {
+            result.forEach(featured => {
+                $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".featuredSection")
+            })
         }
+        var cw = $('.featuredSection img').width()
+        $(".featuredSection img").css({ 'height': cw + 'px' })
     });
 
     $.getJSON("data/music-featured.json", function (result) {
@@ -43,7 +46,7 @@ $(document).ready(function () {
                 $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".musicFeaturedSection")
             })
         }
-        var cw = $('.service').width()
+        var cw = $('.musicFeaturedSection img').width()
         $(".musicFeaturedSection img").css({ 'height': cw + 'px' })
     });
 
@@ -53,6 +56,8 @@ $(document).ready(function () {
                 $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".videoFeaturedSection")
             })
         }
+        var cw = $('.videoFeaturedSection img').width()
+        $(".videoFeaturedSection img").css({ 'height': cw + 'px' })
     });
 
     $(document).on("click", ".imgFeatured", function () {
@@ -113,13 +118,13 @@ $(document).ready(function () {
 
     $('.homeService').on('mouseenter', function () {
         $(this).find('img').addClass('hover')
-        $(this).find('h4').addClass('hover')
+        // $(this).find('h4').addClass('hover')
         $(this).find('p').addClass('hover')
     });
 
     $('.homeService').on('mouseleave', function () {
         $(this).find('img').removeClass('hover')
-        $(this).find('h4').removeClass('hover')
+        // $(this).find('h4').removeClass('hover')
         $(this).find('p').removeClass('hover')
     });
 
@@ -134,18 +139,25 @@ $(document).ready(function () {
             .appendTo('#slideshow');
     }, 3000);
 
-    $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
-    currentSection = 0
-    var section
+    // $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
+    // currentSection = 0
+    // var section
 
 
-    setInterval(() => {
-        if (currentSection == 0)
-            $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-84vw" })
-        else if (currentSection == 1)
-            $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-170vw" })
-        else if (currentSection == 2)
-            $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
-        currentSection < 2 ? currentSection++ : currentSection = 0
-    }, 1000)
+    // setInterval(() => {
+    //     if (currentSection == 0)
+    //         $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-84vw" })
+    //     else if (currentSection == 1)
+    //         $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-170vw" })
+    //     else if (currentSection == 2)
+    //         $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
+    //     currentSection < 2 ? currentSection++ : currentSection = 0
+    // }, 3000)
+
+    $(document).scroll(function () {
+        if (window.scrollY > 600)
+            $("#carouselExampleIndicators").hide()
+        else
+            $("#carouselExampleIndicators").show()
+    })
 })

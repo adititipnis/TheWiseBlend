@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" href="/images/no_background_twb_150px_height_Hw2_icon.ico">
   <title>The Wise Blend | Music - Video - Events - Communication | Mumbai Production House</title>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -54,7 +55,7 @@
           </a>
         </li>
         <li>
-          <a href="/#contactSection">
+          <a href="/contact.html">
             CONTACT
           </a>
         </li>
@@ -92,16 +93,24 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="https://picsum.photos/1920/1080/?random" alt="First slide">
+          <img class="d-block w-100" src="/images/header image.jpg" alt="First slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://picsum.photos/1921/1080/?random" alt="Second slide">
+          <img class="d-block w-100" src="/images/1. Video.jpg" alt="Third slide">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="https://picsum.photos/1922/1080/?random" alt="Third slide">
+          <img class="d-block w-100" src="/images/02.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/3. Event.jpg" alt="Fourth slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="/images/4. Tech.jpg" alt="Fifth slide">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -112,70 +121,82 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-      <div class="divBtnContact">
-        <a href="#contactSection"><button class="btnContact">LET'S GET TALKING</button></a>
-      </div>
-    </div>
 
+    </div>
+    <div class="divBtnContact">
+      <a href="#contactSection"><button class="btnContact">LET'S GET TALKING</button></a>
+    </div>
     <!-- {this.state.isMobileNavVisible && <MobileNav close={this.hideMobileNav} />} -->
 
     <!-- Hello -->
-    <div id="hello" class="section">
-      <h2>Hello!</h2>
+    <div id="hello">
+      <h2 class="hello-header">Hello!</h2>
+      <div class="section">
 
-      <div id="mainDesc">The Wiseblend productions is a Mumbai based production house focused on innovative concepts
-        which deliver a 360 degree solution. The combined experience of the in-house team covers music production,
-        commercials, music videos, live events, background scores, training modules, product demos and digital media
-        content.
-        <br><br>
-        Our company consists of 4 departments: Filmmaking – For live action productions. Post-production – For
-        editing, visual effects, colour correction and graphics. Audio-production – For original music, sound design and
-        recordings. Content development – For planning and managing assets.
+
+        <div id="mainDesc">The Wiseblend productions is a Mumbai based production house focused on innovative concepts
+          which deliver a 360 degree solution. The combined experience of the in-house team covers music production,
+          commercials, music videos, live events, background scores, training modules, product demos and digital media
+          content.
+          <br><br>
+          Our company consists of 4 departments: Filmmaking – For live action productions. Post-production – For
+          editing, visual effects, colour correction and graphics. Audio-production – For original music, sound design
+          and
+          recordings. Content development – For planning and managing assets.
+        </div>
       </div>
     </div>
 
     <!-- Service -->
     <div id="services" class="servicesSection">
-      <div class="homeService service video">
-        <a href="video.html"><img src="images/service-1.png" />
-          <h4>VIDEO</h4>
-          <p href="video.html">Make your brand shine</p>
-          <p class="link" href="video.html">See More</p>
-        </a>
-      </div>
       <div class="homeService service music">
-        <a href="audio.html"><img src="images/service-2.png" />
-          <h4>AUDIO</h4>
+        <a href="audio.html"><img height="300" width="300" src="images/Music.png" />
+          <!-- <h4>AUDIO</h4> -->
           <p href="audio.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam.</p>
           <p class="link" href="video.html">See More</p>
         </a>
       </div>
+      <div class="homeService service video">
+        <a href="video.html"><img height="300" width="300" src="images/video.png" />
+          <!-- <h4>VIDEO</h4> -->
+          <p href="video.html">Make your brand shine</p>
+          <p class="link" href="video.html">See More</p>
+        </a>
+      </div>
+
       <div class="homeService service event">
-        <a href="events.html"><img src="images/service-3.png" />
-          <h4>EVENTS</h4>
+        <a href="events.html"><img height="300" width="300" src="images/Event Marketing.png" />
+          <!-- <h4>EVENTS</h4> -->
           <p href="events.html">Extend the life of your events.</p>
           <p class="link" href="video.html">See More</p>
         </a>
       </div>
       <div class="homeService service tech">
-        <a href="tech.html"><img src="images/service-4.png" />
-          <h4>COMMUNICATION</h4>
+        <a href="tech.html"><img height="300" width="300" src="images/TECH.png" />
+          <!-- <h4>COMMUNICATION</h4> -->
           <p href="tech.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, ullam.</p>
           <p class="link" href="video.html">See More</p>
         </a>
       </div>
     </div>
     <!-- Map -->
-    <div class="section">
-      <h2>Client Map</h2>
+    <div class="grey-panel">
+      <h2 class="map-header">Client Map</h2>
+      <hr>
+      <!-- <img src="/images/marking.png" alt=""> -->
+      <div class="section map-div">
 
-      <div id="worldMap">
-        <img src="images/map.png" />
+
+        <div id="worldMap">
+          <img src="images/map final 01.png" />
+        </div>
       </div>
     </div>
     <!-- Brands -->
-    <div class="section">
-      <h2>Brands</h2>
+    <h2 class="brands-header">Brands</h2>
+    <hr>
+    <div class="section brands-div">
+
       <div class="brandsSection">
         <div class="brands">
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Parle_bUeqYVURE.png" alt=""></div>
@@ -185,10 +206,11 @@
           </div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/asian-paints-logo_Z88g1pl_r.png" alt="">
           </div>
-          <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/amul_logo_op1_pTqoAo8a1X.png" alt="">
-          </div>
+
         </div>
         <div class="brands">
+          <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/amul_logo_op1_pTqoAo8a1X.png" alt="">
+          </div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Reliance_Logo_u6x_ABaEpb.jpeg" alt="">
           </div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Adani_logo_7oPEzqF_Op.png" alt="">
@@ -198,17 +220,21 @@
           </div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Jeep_logo_2mXvdPAKs5.png" alt="">
           </div>
+
+        </div>
+        <div class="brands">
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/askon_logo_xBjqBAcQn.png" alt="">
           </div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/applify_logo_t9dnxd_8DC.png" alt="">
           </div>
-        </div>
-        <div class="brands">
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Ah-Venture_logo_79rZZcRkdL.jpg" alt="">
           </div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Abcl_logo_dfaa4bgqYe.jpg" alt=""></div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/vadilal_logo_qX0X3gtjuz.png" alt="">
           </div>
+
+        </div>
+        <div class="brands">
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Tata_logo_TrsXHUOcbQ.png" alt=""></div>
           <div class="brand"><img src="https://ik.imagekit.io/adititipnis/logos/Tseries_logo_mRhV70SsNJ.png" alt="">
           </div>
@@ -217,8 +243,11 @@
       </div>
     </div>
     <!-- Featured -->
-    <div class="featuredSection">
-      <!-- <div class="featuredStrip">
+    <div class="grey-panel">
+      <h2 class="featured-header">Featured Work</h2>
+      <hr>
+      <div class="featuredSection">
+        <!-- <div class="featuredStrip">
         <span><img src="images/featured-1.jpg" /></span>
         <span><img src="images/featured-2.jpg" /></span>
         <span><img src="images/featured-3.jpg" /></span>
@@ -242,94 +271,7 @@
         <span><img src="images/featured-1.jpg" /></span>
         <span><img src="images/featured-2.jpg" /></span>
       </div> -->
-      <!-- {this.state.isVideoVisible && <VideoPopup close={this.hideVideo} />} -->
-    </div>
-
-
-    <!-- Founders -->
-    <div class="section">
-      <h2>Founders</h2>
-      <div class="foundersSection">
-        <div class="container">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image"
-              src="https://scontent.fbom19-1.fna.fbcdn.net/v/t1.0-9/36910939_2230375736987571_590568349776216064_n.jpg?_nc_cat=107&_nc_ht=scontent.fbom19-1.fna&oh=e2193e138c00e2d706413c707089ef96&oe=5D373710">
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Anup Satam</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image"
-              src="https://scontent.fbom19-2.fna.fbcdn.net/v/t1.0-9/53545820_10156266006323505_125317864272953344_n.jpg?_nc_cat=109&_nc_ht=scontent.fbom19-2.fna&oh=56eaf65f8b4532163781345f532a4bbf&oe=5D4D64CC">
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Kunal Mahashabde</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="content">
-            <div class="content-overlay"></div>
-            <img class="content-image"
-              src="https://scontent.fbom19-1.fna.fbcdn.net/v/t1.0-9/22195337_10155818132963383_7325102359965144278_n.jpg?_nc_cat=108&_nc_ht=scontent.fbom19-1.fna&oh=926191ee15d1242e1f11dcf73065b595&oe=5D3CF793">
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Shrai Pradhan</h3>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Contact -->
-    <div class="section">
-      <h2 id="contactSection">Contact Us</h2>
-      <form
-        action="https://gmail.us20.list-manage.com/subscribe/post-json?u=e23d6c4c939fe3d0277691daa&amp;id=b1b8cbfe93&c=?"
-        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-        <div>
-          <div class="statusMessageDiv">
-            Use the form below to drop us a message or simply call us at 9699638333
-          </div>
-          <div class="border">
-            <input placeholder="Name (optional)" type="text" name="NAME" class="textInput" />
-          </div>
-          <div class="border">
-            <input placeholder="Email Address *" type="email" name="EMAIL" class="textInput" />
-          </div>
-          <div class="border">
-            <input placeholder="Phone Number (optional)" type="text" name="PHONE" class="textInput" />
-          </div>
-          <div class="border">
-            <input placeholder="Message (optional)" type="text" name="MESSAGE" class="textInput" />
-          </div>
-          <div class="servicesInputDiv">
-            <p>Services interested in (optional)</p>
-            <ul class="servicesInputList">
-              <li><input type="checkbox" value="2" name="group[961][2]" id="mce-group[961]-961-0"><label
-                  for="mce-group[961]-961-0">Video Production</label></li>
-              <li><input type="checkbox" value="4" name="group[961][4]" id="mce-group[961]-961-1"><label
-                  for="mce-group[961]-961-1">Music Production</label></li>
-              <li><input type="checkbox" value="8" name="group[961][8]" id="mce-group[961]-961-2"><label
-                  for="mce-group[961]-961-2">Event Coverage</label></li>
-              <li><input type="checkbox" value="16" name="group[961][16]" id="mce-group[961]-961-3"><label
-                  for="mce-group[961]-961-3">Tech Communication</label></li>
-            </ul>
-          </div>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-              name="b_e23d6c4c939fe3d0277691daa_b1b8cbfe93" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Send" name="subscribe" class="btnContact submitButton"></input>
-          </div>
-
-        </div>
-      </form>
-      <div id="status" class="statusMessageDiv">
+        <!-- {this.state.isVideoVisible && <VideoPopup close={this.hideVideo} />} -->
       </div>
     </div>
 
@@ -344,16 +286,19 @@
           <a href="#"><i class="fa fa-rss-square fa-5x"></i></a>
         </ul>
       </div>
+      <!-- <br>
+      <img height="200px" src="/images/logo-bottom.png" alt=""> -->
     </div>
   </div>
   <!-- <a href="#hello" class="top"><i class="fa fa-caret-up" aria-hidden="true"></i></span> -->
 </body>
 
 <div class="divVideo">
-  <iframe title="video" id="video-1" width="560" height="315" src="abc" frameborder="0"
+  <iframe title="video" id="video-1" width="560" height="315" src="" frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"
     seamless=""></iframe>
-  <span id="videoClose" onClick={props.close}>X</span>
+  <p id="caption"> </p>
+  <i id="videoClose" class="fa fa-window-close" aria-hidden="true"></i>
 </div>
 
 </html>

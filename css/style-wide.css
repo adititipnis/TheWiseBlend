@@ -29,19 +29,19 @@
         transition: all 0.5s;
     }
     .logo img:hover {
-        height: 150%;
+        height: 120%;
     }
     .logo a {
         text-decoration: none;
     }
     .section {
-        padding: 20vh 15vw 20vh 15vw;
+        padding: 5vh 15vw 20vh 15vw;
     }
-    #carouselExampleIndicators {
+    /* #carouselExampleIndicators {
         top: 8%
-    }
+    } */
     .divBtnContact {
-        bottom: 25vh;
+        bottom: 10vh;
     }
     .carousel-slider {
         height: 90vh
@@ -66,11 +66,14 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        min-height: 100vh;
     }
     .service {
         display: flex;
         flex-direction: column;
         flex: 1;
+        width: 25vw;
+        height: 25vw;
     }
     /* Overlay */
     @import url(https://fonts.googleapis.com/css?family=Raleway);
@@ -109,13 +112,18 @@
         }
     }
     #mainDesc {
-        padding-left: 20%;
+        padding-left: 10%;
         padding-top: 5%;
-        padding-right: 20%;
+        padding-right: 10%;
         font-size: 20px;
     }
+    .homeService {
+        cursor: pointer;
+    }
     .homeService img, h4 {
-        transition: all 1s;
+        transition: all 0.5s ease-in-out;
+        height: 100%;
+        cursor: pointer;
     }
     .homeService p {
         transition: all 1s;
@@ -123,28 +131,34 @@
     }
     .homeService .link {
         text-decoration: underline;
+        cursor: pointer;
     }
     .homeService img.hover {
         width: 0;
+        cursor: pointer;
     }
     .homeService h4.hover {
         font-size: 0;
+        cursor: pointer;
     }
     .homeService a {
-        top: 15%;
+        /* top: 15%; */
         position: relative;
+        cursor: pointer;
     }
     .homeService p {
         opacity: 0;
         color: #fff;
         text-align: center;
-        top: -40%;
+        top: -55%;
         position: relative;
         font-size: 18px;
         font-weight: bold;
+        cursor: pointer;
     }
     .homeService p.hover {
         opacity: 1;
+        cursor: pointer;
     }
     .musicFeaturedSection img, .videoFeaturedSection img {
         height: 269.797px !important;
@@ -169,5 +183,8 @@
     .portfolio iframe {
         height: 60vh;
         width: 60vw;
+    }
+    .svg-item {
+        width: 40%;
     }
 }
