@@ -920,6 +920,10 @@ h3 {
     object-fit: cover;
 }
 
+.featuredSection .content {
+    cursor: pointer;
+}
+
 @media (max-width: 1200px) {
     .featuredSection, .featuredSection, .musicFeaturedSection, .videoFeaturedSection {
         -moz-column-count: 5;

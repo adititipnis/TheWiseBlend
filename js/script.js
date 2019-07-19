@@ -69,6 +69,14 @@ $(document).ready(function () {
         $(".divVideo").show()
     })
 
+    $(document).on("click", ".featuredSection .content", function () {
+        console.log($(this).attr("value"))
+        $(".divVideo iframe")[0].src = $('.imgFeatured', $(this)).attr("value")
+        if ($('.imgFeatured', $(this)).attr("data-caption").length > 0)
+            $(".divVideo p")[0].innerHTML = $('.imgFeatured', $(this)).attr("data-caption")
+        $(".divVideo").show()
+    })
+
     $("#videoClose").on("click", () => {
         $(".divVideo iframe")[0].src = ""
         $(".divVideo").hide()
