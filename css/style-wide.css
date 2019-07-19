@@ -35,7 +35,7 @@
         text-decoration: none;
     }
     .section {
-        padding: 5vh 15vw 20vh 15vw;
+        padding: 5vh 15vw 5vh 15vw;
     }
     /* #carouselExampleIndicators {
         top: 8%
@@ -119,10 +119,12 @@
     }
     .homeService {
         cursor: pointer;
+        border: #fff 1px solid;
     }
     .homeService img, h4 {
         transition: all 0.5s ease-in-out;
         height: 100%;
+        width: 100%;
         cursor: pointer;
     }
     .homeService p {
@@ -186,5 +188,23 @@
     }
     .svg-item {
         width: 40%;
+    }
+}
+
+@media screen and (min-width: 1500px) { 
+    .navbar-fixed-top-black {
+        align-items: center;
+    }
+
+    .servicesSection {
+        min-height: 70vh;
+    }
+
+    h2 {
+        font-size: 100px;
+    }
+
+    #mainDesc {
+        font-size: 30px;
     }
 }

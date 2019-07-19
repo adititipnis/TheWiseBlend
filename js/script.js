@@ -33,7 +33,8 @@ $(document).ready(function () {
     $.getJSON("data/featured.json", function (result) {
         if (result.length) {
             result.forEach(featured => {
-                $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".featuredSection")
+                $("<div class='content'><div class='featured-content-overlay'></div><img class='imgFeatured content-image' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption +
+                    "'/><div class='content-details fadeIn-bottom'><h3 class='content-title'>" + featured.name + "</h3><p class='content-text'>" + featured.caption + "</p></div></div>").appendTo(".featuredSection")
             })
         }
         var cw = $('.featuredSection img').width()
@@ -106,27 +107,57 @@ $(document).ready(function () {
     //     $(this).next().css({ 'opacity': 1 });
     // })
 
-    $('.serviceCard').on('mouseenter', function () {
-        this.classList.toggle('is-flipped');
+    // $('.serviceCard').on('mouseenter', function () {
+    //     event.target
+    //     $(this).addClass('is-flipped');
+    //     $(this).on('mouseleave', function () {            
+    //             event.target
+    //             $(this).removeClass('is-flipped');
+    //     });
+    // });
+
+    $('.serviceCard h4, .serviceCard p').on('mouseover', function () {
+        event.target
+        $(this).parent().addClass('is-flipped');
+        var parent = event.target.parentElement.id
+        bindMouseLeave(parent)
     });
 
-    $('.serviceCard').on('mouseleave', function () {
-        setTimeout(() => {
-            this.classList.toggle('is-flipped');
-        }, 1500);
-    });
+    function bindMouseLeave(parent) {
+        $(this).on('mouseleave', function () {
+            // setTimeout(() => {
+            if (!event.target.parentElement.id || event.target.parentElement.id != parent)
+                $('#' + parent).removeClass('is-flipped');
+            // }, 1500);
+        });
+    }
 
-    $('.homeService').on('mouseenter', function () {
-        $(this).find('img').addClass('hover')
-        // $(this).find('h4').addClass('hover')
-        $(this).find('p').addClass('hover')
-    });
+    // $('.serviceCard h4, .serviceCard p').on('mouseleave', function () {
+    //     // setTimeout(() => {
+    //     if (event.target != 'h4.card__face.card__face--front' && event.target != 'p.card__face.card__face--back')
+    //         $(this).parent().removeClass('is-flipped');
+    //     // }, 1500);
+    // });
 
-    $('.homeService').on('mouseleave', function () {
-        $(this).find('img').removeClass('hover')
-        // $(this).find('h4').removeClass('hover')
-        $(this).find('p').removeClass('hover')
-    });
+    // $('.homeService').on('mouseenter', function () {
+    //     $(this).find('img').addClass('hover')
+    //     // $(this).find('h4').addClass('hover')
+    //     $(this).find('p').addClass('hover')
+    // });
+
+    // $('.homeService').on('mouseleave', function () {
+    //     $(this).find('img').removeClass('hover')
+    //     // $(this).find('h4').removeClass('hover')
+    //     $(this).find('p').removeClass('hover')
+    // });
+
+    $('.homeService img').on('mouseover', function () {
+        $(this).addClass('animated heartBeat')
+    })
+
+    $('.homeService img').on('mouseleave', function () {
+        $(this).removeClass('animated heartBeat')
+    })
 
     $("#slideshow > div:gt(0)").hide();
 
