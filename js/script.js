@@ -29,38 +29,43 @@ $(document).ready(function () {
     $(".mobileNavOverlay-content a").on("click", toggleMobileNav)
 
     const stripSize = 4
+    if ($(".featuredSection"). length > 0) {
+        $.getJSON("data/featured.json", function (result) {
+            if (result.length) {
+                result.forEach(featured => {
+                    console.log(Date.now())
+                    $("<div class='content'><div class='featured-content-overlay'></div><img class='imgFeatured content-image' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption +
+                        "'/><div class='content-details fadeIn-bottom'><h3 class='content-title'>" + featured.name + "</h3></div></div>").appendTo(".featuredSection")
+                })
+            }
+            var cw = $('.featuredSection img').width()
+            $(".featuredSection img").css({ 'height': cw + 'px' })
+        });
+    }
 
-    $.getJSON("data/featured.json", function (result) {
-        if (result.length) {
-            result.forEach(featured => {
-                console.log(Date.now())
-                $("<div class='content'><div class='featured-content-overlay'></div><img class='imgFeatured content-image' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption +
-                    "'/><div class='content-details fadeIn-bottom'><h3 class='content-title'>" + featured.name + "</h3></div></div>").appendTo(".featuredSection")
-            })
-        }
-        var cw = $('.featuredSection img').width()
-        $(".featuredSection img").css({ 'height': cw + 'px' })
-    });
+    if ($(".musicFeaturedSection").length > 0) {
+        $.getJSON("data/music-featured.json", function (result) {
+            if (result.length) {
+                result.forEach(featured => {
+                    $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".musicFeaturedSection")
+                })
+            }
+            var cw = $('.musicFeaturedSection img').width()
+            $(".musicFeaturedSection img").css({ 'height': cw + 'px' })
+        });
+    }
 
-    $.getJSON("data/music-featured.json", function (result) {
-        if (result.length) {
-            result.forEach(featured => {
-                $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".musicFeaturedSection")
-            })
-        }
-        var cw = $('.musicFeaturedSection img').width()
-        $(".musicFeaturedSection img").css({ 'height': cw + 'px' })
-    });
-
-    $.getJSON("data/video-featured.json", function (result) {
-        if (result.length) {
-            result.forEach(featured => {
-                $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".videoFeaturedSection")
-            })
-        }
-        var cw = $('.videoFeaturedSection img').width()
-        $(".videoFeaturedSection img").css({ 'height': cw + 'px' })
-    });
+    if ($(".videoFeaturedSection").length > 0) {
+        $.getJSON("data/video-featured.json", function (result) {
+            if (result.length) {
+                result.forEach(featured => {
+                    $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".videoFeaturedSection")
+                })
+            }
+            var cw = $('.videoFeaturedSection img').width()
+            $(".videoFeaturedSection img").css({ 'height': cw + 'px' })
+        });
+    }
 
     $(document).on("click", ".imgFeatured", function () {
         console.log($(this).attr("value"))

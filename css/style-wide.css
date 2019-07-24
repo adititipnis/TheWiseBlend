@@ -242,6 +242,12 @@
         letter-spacing: 0.5px;
         background-color: rgba(0, 0, 0, 0.4);
     }
+    .useCases { 
+        padding: 10vh 10vh 10vh 10vh;
+    }
+    #contactSection {
+        margin-top: 10%
+    }
 }
 
 @media screen and (min-width: 1500px) {

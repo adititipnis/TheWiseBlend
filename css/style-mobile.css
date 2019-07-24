@@ -177,17 +177,23 @@
         color: #fff;
         border: solid;
         border-color: #fff;
-        border-width: 5px;
+        border-width: 3px;
         font-size: 1rem;
         font-weight: bold;
         padding: 1% 1%;
         margin: 1%;
-        text-align: center
+        text-align: center;
         display: flex;
         align-items: center;
         text-align: center;
         justify-content: center;
         letter-spacing: 0.5px;
         background-color: rgba(0, 0, 0, 0.4);
+    }
+    .useCases { 
+        padding: 10vh 5vh 10vh 5vh;
+    }
+    #contactSection {
+        margin-top: 20%
     }
 }
