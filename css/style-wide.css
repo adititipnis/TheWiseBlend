@@ -1,6 +1,6 @@
 /*Wide*/
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 767px) {
     h2 {
         margin-left: 15%;
         font-size: 60px;
@@ -250,7 +250,7 @@
     }
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 2400px) {
     .navbar-fixed-top-black {
         align-items: center;
     }
