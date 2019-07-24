@@ -33,8 +33,9 @@ $(document).ready(function () {
     $.getJSON("data/featured.json", function (result) {
         if (result.length) {
             result.forEach(featured => {
+                console.log(Date.now())
                 $("<div class='content'><div class='featured-content-overlay'></div><img class='imgFeatured content-image' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption +
-                    "'/><div class='content-details fadeIn-bottom'><h3 class='content-title'>" + featured.name + "</h3><p class='content-text'>" + featured.caption + "</p></div></div>").appendTo(".featuredSection")
+                    "'/><div class='content-details fadeIn-bottom'><h3 class='content-title'>" + featured.name + "</h3></div></div>").appendTo(".featuredSection")
             })
         }
         var cw = $('.featuredSection img').width()

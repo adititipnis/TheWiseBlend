@@ -184,32 +184,11 @@ h3 {
     margin: auto;
     text-align: center;
     text-decoration: none;
-    height: 25vw;
 }
 
 .service img {
     object-fit: contain;
     margin-top: auto
-}
-
-.video {
-    /* background-color: #3b5998; */
-    background-image: linear-gradient(to right, #8E0E00, #1F1C18)
-}
-
-.music {
-    /* background-color: #d61b1e */
-    background-image: linear-gradient(to right, #1F1C18, #8E0E00)
-}
-
-.event {
-    /* background-color: #FF7514; */
-    background-image: linear-gradient(to right, #1F1C18, #203A43, #2C5364)
-}
-
-.tech {
-    /* background-color: #38908f; */
-    background-image: linear-gradient(to right, #2C5364, #1F1C18)
 }
 
 #ourwork {
@@ -1179,7 +1158,6 @@ html {
 }
 
 .brand img {
-    height: 20vh;
     object-fit: contain;
     width: 10vw;
 }
@@ -1187,12 +1165,11 @@ html {
 .brandsSection {
     display: flex;
     flex-direction: column;
-    width: 60vw;
 }
 
 .brands {
     display: flex;
-    margin: auto;
+    justify-content: center;
     margin-top: 5%;
 }
 
@@ -1217,7 +1194,7 @@ html {
 }
 
 .content {
-    position: relative;    
+    position: relative;
     max-width: 400px;
     margin: auto;
     overflow: hidden;
@@ -1306,6 +1283,11 @@ html {
 
 .fadeIn-bottom {
     top: 80%;
+}
+
+.homeService {
+    cursor: pointer;
+    border: #fff 1px solid;
 }
 
 .serviceCard {
@@ -1399,12 +1381,6 @@ html {
     margin: auto;
 }
 
-#hello {
-    /* margin-top: 3%; */
-    margin-top: 100vh;
-    /* background-color: #d61b1e */
-}
-
 .brands-header {
     /* padding-top: 9%; */
     /* background-color: #38908f; */
@@ -1455,7 +1431,6 @@ html {
 
 #worldMap img {
     width: 90vw;
-    margin-left: -10%;
 }
 
 .audio h2 {
