@@ -12,7 +12,6 @@
         position: static;
         margin-top: 50vh;
     }
-
     .navigation-wide {
         display: none
     }
@@ -50,22 +49,18 @@
         /* scroll-snap-align: center; */
         position: relative;
     }
-
     .video {
         /* background-color: #3b5998; */
         background-image: linear-gradient(to bottom, #8E0E00, #1F1C18)
     }
-    
     .music {
         /* background-color: #d61b1e */
         background-image: linear-gradient(to bottom, #1F1C18, #8E0E00)
     }
-    
     .event {
         /* background-color: #FF7514; */
         background-image: linear-gradient(to bottom, #1F1C18, #203A43, #2C5364)
     }
-    
     .tech {
         /* background-color: #38908f; */
         background-image: linear-gradient(to bottom, #2C5364, #1F1C18)
@@ -168,5 +163,11 @@
     }
     .portfolio iframe {
         width: 70vw;
+    }
+    .audio h2 {
+        margin-top: 20%;
+    }
+    .section {
+        padding: 5vh 10vw 10vh 10vw;
     }
 }
