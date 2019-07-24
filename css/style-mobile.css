@@ -170,4 +170,24 @@
     .section {
         padding: 5vh 10vw 10vh 10vw;
     }
+    .process {
+        background-image: url(../images/mariam-soliman-xFD7GD2BP-s-unsplash-mobile.jpg);
+    }
+    .useCaseName {
+        color: #fff;
+        border: solid;
+        border-color: #fff;
+        border-width: 5px;
+        font-size: 0.6rem;
+        font-weight: bold;
+        padding: 1% 1%;
+        margin: 1%;
+        text-align: center
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.5px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }

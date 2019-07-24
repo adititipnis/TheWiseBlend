@@ -4,10 +4,10 @@ $(document).ready(function () {
         window.location.href = "./portfolio?name=" + searchParams.get('name')
     }
 
-    $('.my-carousel').carousel().swipeCarousel({
-        // low, medium or high
-        sensitivity: 'high'
-    });
+    // $('.my-carousel').carousel().swipeCarousel({
+    //     // low, medium or high
+    //     sensitivity: 'high'
+    // });
 
     // if ($(window).width() >= 767) {
     //     var cw = $('.service').width();

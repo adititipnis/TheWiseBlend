@@ -219,6 +219,29 @@
     .svg-item {
         width: 40%;
     }
+    .process {
+        background-image: url(../images/mariam-soliman-xFD7GD2BP-s-unsplash.jpg);
+        height: 75%;
+    }
+    .useCaseName {
+        color: #fff;
+        border: solid;
+        border-color: #fff;
+        border-width: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 1% 1%;
+        margin: 1%;
+        text-align: center;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        letter-spacing: 0.5px;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 @media screen and (min-width: 1500px) {
