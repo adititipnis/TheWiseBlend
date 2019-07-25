@@ -15,7 +15,8 @@ body {
 .section {
     color: #0D0D0D;
     background-color: #fff;
-    text-align: justify
+    text-align: justify;
+    font-kerning: auto;
 }
 
 #start, .spaceOut {
