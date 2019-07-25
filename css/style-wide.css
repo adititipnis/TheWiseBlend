@@ -266,4 +266,8 @@
     .logo img {
         height: 150px;
     }
+    .featuredSection {
+        margin-left: 11%;
+        margin-right: 11%;
+    }
 }
