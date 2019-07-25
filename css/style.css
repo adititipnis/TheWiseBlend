@@ -959,7 +959,8 @@ picture img {
 }
 
 #video-1 {
-    background: url(https://cdn-images-1.medium.com/max/1600/0*7XYBNxqZdTkLrDHj.gif) center center no-repeat;
+    /* background: url(https://cdn-images-1.medium.com/max/1600/0*7XYBNxqZdTkLrDHj.gif) center center no-repeat; */
+    background: url(/images/91.svg) center center no-repeat;
 }
 
 .svg-item {
