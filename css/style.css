@@ -80,8 +80,8 @@ h3 {
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     position: absolute;
     left: 3vw;
     font-size: xx-large;
@@ -92,7 +92,7 @@ h3 {
 }
 
 .logo img {
-    height: 150px;
+    height: 100px;
 }
 
 .navigation-wide a {
@@ -214,20 +214,21 @@ h3 {
     font-size: 2.5rem;
 }
 
-.social-media-icons a:nth-child(1) i:hover {
-    color: #d34836;
+.social-media-icons a:nth-child(1) span:hover {    
+    color: #3b5999;
 }
 
-.social-media-icons a:nth-child(2) i:hover {
-    color: #4099FF;
+.social-media-icons a:nth-child(2) span:hover {
+    color: #e4405f;
 }
 
-.social-media-icons a:nth-child(3) i:hover {
-    color: #b31217;
+.social-media-icons a:nth-child(3) span:hover {
+    color: #55acee;
 }
 
-.social-media-icons a:nth-child(4) i:hover {
-    color: #FF6600;
+.social-media-icons a:nth-child(4) span:hover {
+    color: #cd201f;
+    
 }
 
 .divVideo {
@@ -311,9 +312,24 @@ h3 {
 
 .mainContainer {
     height: 100vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.carousel-inner {
+    object-fit: contain;
+}
+
+picture {
+    display: flex;
+    max-width: 100vw;
+}
+
+picture img {
+    object-fit: contain;
+    width: 100%;
 }
 
 /* scroll-snap-type: y proximity; */
@@ -876,7 +892,7 @@ h3 {
     object-fit: cover;
 }
 
-.featuredSection .content {
+.featuredSection .content, .musicFeaturedSection .content, .videoFeaturedSection .content {
     cursor: pointer;
 }
 
@@ -1247,7 +1263,6 @@ html {
 .content-details h3 {
     color: #fff;
     font-weight: 500;
-    letter-spacing: 0.1em;
     margin-bottom: 0.5em;
     /* text-transform: uppercase; */
 }
@@ -1353,9 +1368,10 @@ html {
     letter-spacing: 0.5px;
 }
 
-.portfolio {
+.mainContainer .portfolio {
     text-align: center;
     margin: auto;
+    padding: 10vh 15vw 10vh 15vw;
 }
 
 .brands-header {
@@ -1419,6 +1435,7 @@ html {
 #carouselExampleIndicators {
     position: fixed;
     z-index: 1;
+    width: 100vw;
 }
 
 .grey-panel {

@@ -29,7 +29,7 @@ $(document).ready(function () {
     $(".mobileNavOverlay-content a").on("click", toggleMobileNav)
 
     const stripSize = 4
-    if ($(".featuredSection"). length > 0) {
+    if ($(".featuredSection").length > 0) {
         $.getJSON("data/featured.json", function (result) {
             if (result.length) {
                 result.forEach(featured => {
@@ -47,7 +47,8 @@ $(document).ready(function () {
         $.getJSON("data/music-featured.json", function (result) {
             if (result.length) {
                 result.forEach(featured => {
-                    $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".musicFeaturedSection")
+                    $("<div class='content'><div class='featured-content-overlay'></div><img class='imgFeatured content-image' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption +
+                        "'/><div class='content-details fadeIn-bottom'><h3 class='content-title'>" + featured.name + "</h3></div></div>").appendTo(".musicFeaturedSection")
                 })
             }
             var cw = $('.musicFeaturedSection img').width()
@@ -59,7 +60,8 @@ $(document).ready(function () {
         $.getJSON("data/video-featured.json", function (result) {
             if (result.length) {
                 result.forEach(featured => {
-                    $("<img class='imgFeatured' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption + "'/>").appendTo(".videoFeaturedSection")
+                    $("<div class='content'><div class='featured-content-overlay'></div><img class='imgFeatured content-image' value=" + featured.url + " src=" + encodeURI(featured.img) + " data-caption='" + featured.caption +
+                        "'/><div class='content-details fadeIn-bottom'><h3 class='content-title'>" + featured.name + "</h3></div></div>").appendTo(".videoFeaturedSection")
                 })
             }
             var cw = $('.videoFeaturedSection img').width()
@@ -75,7 +77,7 @@ $(document).ready(function () {
         $(".divVideo").show()
     })
 
-    $(document).on("click", ".featuredSection .content", function () {
+    $(document).on("click", ".featuredSection .content, .musicFeaturedSection .content, .videoFeaturedSection .content", function () {
         console.log($(this).attr("value"))
         $(".divVideo iframe")[0].src = $('.imgFeatured', $(this)).attr("value")
         if ($('.imgFeatured', $(this)).attr("data-caption").length > 0)
@@ -200,7 +202,7 @@ $(document).ready(function () {
     // }, 3000)
 
     $(document).scroll(function () {
-        if (window.scrollY > 600)
+        if (window.scrollY > $(window).height())
             $("#carouselExampleIndicators").hide()
         else
             $("#carouselExampleIndicators").show()

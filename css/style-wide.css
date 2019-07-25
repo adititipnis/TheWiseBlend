@@ -54,10 +54,10 @@
         font-size: xx-large;
     }
     .logo img {
-        transition: all 0.5s;
+        transition: all 0.3s;
     }
     .logo img:hover {
-        height: 120%;
+        transform: scale(1.5);
     }
     .logo a {
         text-decoration: none;
@@ -262,5 +262,8 @@
     }
     #mainDesc {
         font-size: 30px;
+    }
+    .logo img {
+        height: 150px;
     }
 }
