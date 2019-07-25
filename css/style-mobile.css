@@ -97,7 +97,9 @@
         position: fixed;
         z-index: 1030;
         top: 6vh;
+        box-shadow: 0 4px 9px 1px #ccc;
     }
+
     .mobileNavOverlay .closebtn {
         margin-bottom: auto;
         font-size: 60px;
