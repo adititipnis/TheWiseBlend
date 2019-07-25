@@ -1317,26 +1317,27 @@ html {
 
 .serviceCard.is-flipped {
     transform: rotateY(-180deg);
+    backface-visibility: visible;
 }
 
 .card__face .card__face--back {
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transition: 500ms;
+    backface-visibility: hidden; */
+    -webkit-transition: 100ms;
     -webkit-transform-style: preserve-3d;
     -webkit-transform: rotateY(360deg);
-    -moz-transition: 500ms;
+    -moz-transition: 100ms;
     -moz-transform-style: preserve-3d;
     -moz-transform: rotateY(360deg);
-    -o-transition: 500ms;
+    -o-transition: 100ms;
     -o-transform-style: preserve-3d;
     -o-transform: rotateY(360deg);
-    -ms-transition: 500ms;
+    -ms-transition: 100ms;
     -ms-transform-style: preserve-3d;
     -ms-transform: rotateY(360deg);
-    transition: 500ms;
+    transition: 100ms;
     transform-style: preserve-3d;
     transform: rotateY(360deg);
 }
@@ -1346,7 +1347,7 @@ html {
     position: absolute;
     height: 100%;
     width: 100%;
-    backface-visibility: hidden;
+    /* backface-visibility: hidden; */
     display: flex;
     align-items: center;
     justify-content: center;
