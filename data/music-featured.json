@@ -24,7 +24,7 @@
         "caption": "Producer: AnupSatam, AdinathPatkar"
     },
     {
-        "name": "Chetz D ft. Gajendra Verma – YaarBanale",
+        "name": "Chetz D ft. Gajendra Verma – Yaar Banale",
         "img": "https://ik.imagekit.io/adititipnis/tr:h-400/Chetz_D_-_Yaar_Banale_nAu6Uct54.jpg",
         "url": "https://www.youtube.com/embed/aIzCK_HbXEM",
         "caption": "Producer: Chetz D, SHRAi&AnupSatam"
@@ -141,13 +141,8 @@
     {
         "name": "Purplehed – Little Black Holes",
         "img": "https://ik.imagekit.io/adititipnis/tr:h-400/Little_Black_Holes_MOF62xHtr.png",
-        "url": "https://www.youtube.com/embed/AqS3mq69q4g",
+        "url": "https://open.spotify.com/embed/track/0prDbMRZmcZo7gpV9u5yE8",
         "caption": "Producer: SHRAi"
-    },
-    {
-        "img": "https://ik.imagekit.io/adititipnis/tr:h-400/Machhli_Jal_Ki_Rani_Hai_e1IfPnppSw.png",
-        "url": "https://www.youtube.com/embed/2wJqXa2aC88",
-        "caption": "Sound FX: AnupSatam"
     },
     {
         "name": "Narski – Oasis",
@@ -262,5 +257,11 @@
         "img": "https://ik.imagekit.io/adititipnis/tr:h-400/Vadilal_3WTtA87CN.jpg",
         "url": "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffullcirclecommunications%2Fvideos%2F1869479273066053%2F&show_text=0&width=560&mute=0",
         "caption": "Guitars: AnupSatam"
+    },
+    {
+        "name": "Tonay Monay: Rapperiya Baalam ft. Rajveer Singh",
+        "img": "https://ik.imagekit.io/adititipnis/tr:h-400/Tonay_Monay_final_EKRkz2H2s.png",
+        "url": "https://www.youtube.com/embed/IRJg1WtQInI",
+        "caption": "Producer: SHRAi, Anup Satam"
     }
 ]
