@@ -242,8 +242,8 @@
         letter-spacing: 0.5px;
         background-color: rgba(0, 0, 0, 0.4);
     }
-    .useCases { 
-        padding: 10vh 10vh 10vh 10vh;
+    .useCases {
+        padding: 10vh 10vh 30vh 10vh;
     }
     #contactSection {
         margin-top: 10%
@@ -266,7 +266,7 @@
     .logo img {
         height: 150px;
     }
-    .featuredSection {
+    .featuredSection, .musicFeaturedSection, .videoFeaturedSection {
         margin-left: 11%;
         margin-right: 11%;
     }

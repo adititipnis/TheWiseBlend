@@ -8,7 +8,9 @@ $(document).ready(function () {
         $('.my-carousel').carousel().swipeCarousel({
             // low, medium or high
             sensitivity: 'high',
-            interval: 3000
+            interval: 1000,
+            keyboard: true,
+            pause: false
         });
     }
 

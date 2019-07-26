@@ -330,7 +330,7 @@ picture {
 
 picture img {
     object-fit: contain;
-    width: 100%;
+    width: 99vw;
 }
 
 /* scroll-snap-type: y proximity; */
@@ -1429,10 +1429,9 @@ html {
     width: 90vw;
 }
 
-.audio h2 {
-    margin-top: 10%;
+.start {
+    padding-top: 10%;
     margin-bottom: 0;
-    background-color: #d61b18;
 }
 
 #carouselExampleIndicators {
