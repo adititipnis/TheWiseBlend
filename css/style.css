@@ -1318,6 +1318,14 @@ html {
 .serviceCard.is-flipped {
     transform: rotateY(-180deg);
     backface-visibility: visible;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-backface-visibility: visible;
+    -moz-transform: rotateY(-180deg);
+    -moz-backface-visibility: visible;
+    -ms-transform: rotateY(-180deg);
+    -ms-backface-visibility: visible;
+    -o-transform: rotateY(-180deg);
+    -o-backface-visibility: visible;
     opacity: 0.99;
 }
 
@@ -1376,6 +1384,10 @@ html {
     transform: rotateY(-180deg);
     letter-spacing: 0.5px;
     backface-visibility: visible;
+    -webkit-backface--visibility: visible;
+    -moz-backface-visibility: visible;
+    -o-backface-visibility: visible;
+    -ms-backface-visibility: visible;
     opacity: 0.99;
 }
 
