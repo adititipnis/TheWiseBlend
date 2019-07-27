@@ -1355,9 +1355,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotateY(0deg);
+    /* transform: rotateY(0deg);
     -webkit-transform: rotateY(360deg);
-    -ms-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg); */
 }
 
 .card__face--back {
