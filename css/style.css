@@ -1287,28 +1287,38 @@ html {
 .serviceCard {
     transform-style: preserve-3d;
     transform-origin: center;
-    transition: transform 500ms;
-    /* transition-delay: 0.500ms; */
+    transition: 500ms;
     cursor: pointer;
     width: 100%;
     height: 100%;
     position: relative;
     margin-left: 1px;
     margin-right: 1px;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    transform: translateX(0%) rotateY(0deg);
     box-shadow: 0 0 0 #000;
+    /* backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; */
+    transform: translateX(0%) rotateY(0deg);
     transform: translate3d(0, 0, 0);
+    transition: 500ms;
+    transform-style: preserve-3d;
     -webkit-transition: 500ms;
     -webkit-transform-style: preserve-3d;
     -ms-transition: 500ms;
+    -ms-transform-style: preserve-3d;
     -moz-transition: 500ms;
     -moz-transform: perspective(1000px);
     -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transition: 500ms;
-    transform-style: preserve-3d;
+
+    backface-visibility: hidden;
+    transform: rotateY(0);
+    -webkit-backface-visibility: hidden;    
+    -webkit-transform: rotateY(0);
+    -moz-backface-visibility: hidden;
+    -moz-transform: rotateY(0);
+    -ms-backface-visibility: hidden;
+    -ms-transform: rotateY(0);
+    -o-backface-visibility: hidden;
+    -o-transform: rotateY(0);
 }
 
 /* .serviceCard * {
@@ -1327,6 +1337,7 @@ html {
     -o-transform: rotateY(-180deg);
     -o-backface-visibility: visible;
     opacity: 0.99;
+    /* filter: opacity(1); */
 }
 
 .card__face .card__face--back {
@@ -1352,6 +1363,8 @@ html {
 }
 
 .card__face {
+    transition: 100ms;
+    -webkit-transition: 100ms;
     text-align: center;
     position: absolute;
     height: 100%;
@@ -1389,6 +1402,7 @@ html {
     -o-backface-visibility: visible;
     -ms-backface-visibility: visible;
     opacity: 0.99;
+    /* filter:opacity(1); */
 }
 
 .mainContainer .portfolio {
