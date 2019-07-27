@@ -1347,11 +1347,15 @@ html {
     position: absolute;
     height: 100%;
     width: 100%;
-    /* backface-visibility: hidden; */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: rotateY(360deg);
+    transform: rotateY(0deg);
     -webkit-transform: rotateY(360deg);
     -ms-transform: rotateY(360deg);
 }
