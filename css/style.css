@@ -1318,11 +1318,7 @@ html {
 .serviceCard.is-flipped {
     transform: rotateY(-180deg);
     backface-visibility: visible;
-}
-
-.serviceCard.is-flipped .serviceCard.is-flipped {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+    opacity: 0.99;
 }
 
 .card__face .card__face--back {
