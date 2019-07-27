@@ -1375,6 +1375,8 @@ html {
     -ms-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
     letter-spacing: 0.5px;
+    backface-visibility: visible;
+    opacity: 0.99;
 }
 
 .mainContainer .portfolio {
