@@ -1320,6 +1320,11 @@ html {
     backface-visibility: visible;
 }
 
+.serviceCard.is-flipped .serviceCard.is-flipped {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
 .card__face .card__face--back {
     /* -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
