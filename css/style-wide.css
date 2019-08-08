@@ -57,7 +57,7 @@
         transition: all 0.3s;
     }
     .logo img:hover {
-        transform: scale(1.5);
+        transform: scale(1.2);
     }
     .logo a {
         text-decoration: none;
@@ -94,7 +94,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        min-height: 100vh;
+        /* min-height: 100vh; */
     }
     .service {
         display: flex;
@@ -143,6 +143,7 @@
         padding-left: 10%;
         padding-top: 5%;
         padding-right: 10%;
+        padding-bottom: 5%;
         font-size: 20px;
     }
     .homeService img, h4 {

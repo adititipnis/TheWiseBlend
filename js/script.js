@@ -4,21 +4,19 @@ $(document).ready(function () {
         window.location.href = "./portfolio?name=" + searchParams.get('name')
     }
 
-    if ($('.my-carousel').length > 0) {
-        $('.my-carousel').carousel().swipeCarousel({
-            // low, medium or high
-            sensitivity: 'high',
-            interval: 1000,
-            keyboard: true,
-            pause: false
+    if ($(".my-carousel").length > 0) {
+        $(".my-carousel").swipe({
+
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+                if (direction == 'left') $(this).carousel('next');
+                if (direction == 'right') $(this).carousel('prev');
+
+            },
+            allowPageScroll: "vertical"
+
         });
     }
-
-    // if ($(window).width() >= 767) {
-    //     var cw = $('.service').width();
-    //     $('.service').css({ 'height': cw + 'px' });
-    //     $('.service a').css({ 'height': cw + 'px' });
-    // }
 
     var isMobineNavVisible = false
     $(".mobileNavOverlay").hide()
@@ -124,19 +122,6 @@ $(document).ready(function () {
         });
     }
 
-    // $(".useCaseName").on("mouseenter", function () {
-    //     $(this).next().css({ 'opacity': 1 });
-    // })
-
-    // $('.serviceCard').on('mouseenter', function () {
-    //     event.target
-    //     $(this).addClass('is-flipped');
-    //     $(this).on('mouseleave', function () {            
-    //             event.target
-    //             $(this).removeClass('is-flipped');
-    //     });
-    // });
-
     $('.serviceCard h4, .serviceCard p').on('mouseover', function () {
         event.target
         $(this).parent().addClass('is-flipped');
@@ -147,30 +132,11 @@ $(document).ready(function () {
     function bindMouseLeave(parent) {
         $(this).on('mouseleave', function () {
             // setTimeout(() => {
-            if (!event.target.parentElement.id || event.target.parentElement.id != parent)
+            if (!event.target.parentElement || !event.target.parentElement.id || event.target.parentElement.id != parent)
                 $('#' + parent).removeClass('is-flipped');
             // }, 1500);
         });
     }
-
-    // $('.serviceCard h4, .serviceCard p').on('mouseleave', function () {
-    //     // setTimeout(() => {
-    //     if (event.target != 'h4.card__face.card__face--front' && event.target != 'p.card__face.card__face--back')
-    //         $(this).parent().removeClass('is-flipped');
-    //     // }, 1500);
-    // });
-
-    // $('.homeService').on('mouseenter', function () {
-    //     $(this).find('img').addClass('hover')
-    //     // $(this).find('h4').addClass('hover')
-    //     $(this).find('p').addClass('hover')
-    // });
-
-    // $('.homeService').on('mouseleave', function () {
-    //     $(this).find('img').removeClass('hover')
-    //     // $(this).find('h4').removeClass('hover')
-    //     $(this).find('p').removeClass('hover')
-    // });
 
     $('.homeService img').on('mouseover', function () {
         $(this).addClass('animated heartBeat')
@@ -191,25 +157,10 @@ $(document).ready(function () {
             .appendTo('#slideshow');
     }, 3000);
 
-    // $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
-    // currentSection = 0
-    // var section
-
-
-    // setInterval(() => {
-    //     if (currentSection == 0)
-    //         $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-84vw" })
-    //     else if (currentSection == 1)
-    //         $($(".brandsSection").children(".brands")[0]).animate({ "margin-left": "-170vw" })
-    //     else if (currentSection == 2)
-    //         $($(".brandsSection").children(".brands")[0]).css({ "margin-left": "0vw" })
-    //     currentSection < 2 ? currentSection++ : currentSection = 0
-    // }, 3000)
-
     $(document).scroll(function () {
         if (window.scrollY > $(window).height())
-            $("#carouselExampleIndicators").hide()
+            $("#carousel-example-generic").hide()
         else
-            $("#carouselExampleIndicators").show()
+            $("#carousel-example-generic").show()
     })
 })
