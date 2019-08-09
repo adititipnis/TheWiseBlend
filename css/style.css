@@ -985,26 +985,26 @@ picture img {
 
 .donut-segment {
     transform-origin: center;
-    stroke: #23B18E;
+    stroke: #077379;
 }
 
 .donut-segment-2 {
-    stroke: #23B18E;
+    stroke: #077379;
     animation: donut1 3s;
 }
 
 .donut-segment-3 {
-    stroke: #23B18E;
+    stroke: #077379;
     animation: donut2 3s;
 }
 
 .donut-segment-4 {
-    stroke: #23B18E;
+    stroke: #077379;
     animation: donut4 3s;
 }
 
 .donut-segment-5 {
-    stroke: #23B18E;
+    stroke: #077379;
     animation: donut3 3s;
 }
 
@@ -1013,7 +1013,7 @@ picture img {
 }
 
 .segment-2 {
-    fill: #23B18E;
+    fill: #077379;
 }
 
 .segment-3 {
@@ -1021,7 +1021,7 @@ picture img {
 }
 
 .segment-4 {
-    fill: #23B18E;
+    fill: #077379;
 }
 
 .donut-percent {
@@ -1075,7 +1075,7 @@ picture img {
 
 .donut-text {
     font-family: 'Lato';
-    fill: #23B18E;
+    fill: #077379;
     font-weight: bolder;
 }
 
@@ -1084,7 +1084,7 @@ picture img {
 }
 
 .donut-text-1 {
-    fill: #23B18E;
+    fill: #077379;
 }
 
 .donut-text-2 {
@@ -1092,7 +1092,7 @@ picture img {
 }
 
 .donut-text-3 {
-    fill: #23B18E;
+    fill: #077379;
 }
 
 .donut-text-4 {
@@ -1510,4 +1510,8 @@ html {
 
 .wide-section {
     margin-top: 15vh;
+}
+
+.servicesSection {
+    margin: 10% 0;
 }
