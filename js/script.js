@@ -158,7 +158,7 @@ $(document).ready(function () {
     }, 3000);
 
     $(document).scroll(function () {
-        if (window.scrollY > $(window).height())
+        if (window.scrollY > $(window).height() * 0.7)
             $("#carousel-example-generic").hide()
         else
             $("#carousel-example-generic").show()
