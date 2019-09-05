@@ -74,6 +74,12 @@ $(document).ready(function () {
 
     $(document).on("click", ".imgFeatured", function () {
         console.log($(this).attr("value"))
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Videos',
+            eventAction: 'play',
+            eventLabel: $(this).attr("value")
+          });
         $(".divVideo iframe")[0].src = $(this).attr("value")
         if ($(this).attr("data-caption").length > 0)
             $(".divVideo p")[0].innerHTML = $(this).attr("data-caption")
@@ -93,6 +99,7 @@ $(document).ready(function () {
         $(".divVideo").hide()
     })
     var $form = $('form');
+    $("#status").hide()
 
     if ($form.length > 0) {
         $('form input[type="submit"]').bind('click', function (event) {
@@ -113,10 +120,14 @@ $(document).ready(function () {
             contentType: "application/json; charset=utf-8",
             error: function (err) { alert("Could not connect to the registration server. Please try again later."); },
             success: function (data) {
-                if (data.result != "success")
-                    $("#status").append(data.msg)
-                else
-                    $("#status").append("Your message has been sent. We'll get back to you soon!")
+                if (data.result != "success") {
+                    $("#mc-embedded-subscribe-form").hide()
+                    $("#status").show()
+                }
+                else {
+                    $("#mc-embedded-subscribe-form").hide()
+                    $("#status").show()
+                }
 
             }
         });
