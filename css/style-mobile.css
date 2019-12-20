@@ -150,9 +150,12 @@
         flex-direction: column;
     }
     .foundersSection img, .content-overlay {
-        width: 60vw;
-        height: 60vw;
+        width: 40vw;
+        height: 40vw;
         margin-top: 10vw;
+    }
+    .foundersSection .content {
+        text-align: center;
     }
     .video-infographics {
         text-align: center;
