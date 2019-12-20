@@ -1170,11 +1170,12 @@ html {
 .foundersSection {
     display: flex;
     justify-content: space-between;
-    padding-top: 10%;
 }
 
 .foundersSection img, .content-overlay {
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 
 .container .title {
@@ -1462,6 +1463,7 @@ html {
 
 .founders-header {
     /* background-color: #ff7514; */
+    padding-top: 10%;
     background-color: #8d8d8d;
     background-image: linear-gradient(to right, #aaaaaa, #e2e2e2, #aaaaaa, #e2e2e2);
 }
