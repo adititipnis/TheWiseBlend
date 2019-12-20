@@ -48,6 +48,7 @@
         /* height: 100vh; */
         /* scroll-snap-align: center; */
         position: relative;
+        min-height: 400vw;
     }
     .video {
         /* background-color: #3b5998; */
