@@ -200,6 +200,9 @@
         width: 20vw;
         height: 20vw;
     }
+    .foundersSection .name {
+        display: none;
+    }
     .video-infographics {
         display: flex;
         flex-direction: row;
